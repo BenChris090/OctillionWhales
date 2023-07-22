@@ -8,6 +8,7 @@ import AccountSummary from './AccuntSummary';
 import AccountStatement from './AccountStatement';
 import ChangePassword from './ChangePassword';
 import LoanApplication from './LoanApplication';
+import CustomerCare from './CustomerCare';
 import Mobile from './Mobile';
 import Card from './Card';
 import Atm from './Atm';
@@ -36,7 +37,8 @@ function App() {
             <Route path='/account-summary' element={<AccountSummary/>}/>
             <Route path='/account-statement' element={<AccountStatement/>}/>   
             <Route path='/change-password' element={<ChangePassword/>}/>   
-            <Route path='/loan-application' element={<LoanApplication/>}/>        
+            <Route path='/loan-application' element={<LoanApplication/>}/>    
+            <Route path='/customer-care' element={<CustomerCare/>}/>        
             <Route path='/mobile' element={<Mobile/>}/>
             <Route path='/card' element={<Card/>}/>
             <Route path='/atm' element={<Atm/>}/>

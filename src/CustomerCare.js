@@ -10,18 +10,53 @@ import { useState } from "react";
 const CustomerCare = () => {
     let ICE_LOGO =  require('./ICE_LOGO.png');
     const [mNav, setmNav] = useState("none");
-    const [inputs, setInputs] = useState({});
+    // State to hold form field values
+    const [formData, setFormData] = useState({
+        receiver: '',
+        subject: '',
+        complaint: ''
+    });
+    // State to track form validation errors
+    const [errors, setErrors] = useState({});
+
+    // Function to handle form submission
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Perform form validation before submitting
+        const validationErrors = validateForm(formData);
+
+        if (Object.keys(validationErrors).length === 0) {
+        // If there are no validation errors, submit the form (you can implement form submission logic here)
+        alert('Ticket Submitted!');
+        } else {
+        // If there are validation errors, set the errors state to display them to the user
+        setErrors(validationErrors);
+        }
+    };
   
     const handleChange = (event) => {
-      const name = event.target.name;
-      const value = event.target.value;
-      setInputs(values => ({...values, [name]: value}))
+      const { name, value }  = event.target;
+      setFormData({...formData, [name]: value})
     }
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      alert(inputs);
-    }
+
+    // Function to validate the form fields
+    const validateForm = (data) => {
+        const errors = {};
+
+        // Check for required fields
+        if (!data.subject.trim()) {
+        errors.subject = 'Subject Is Required';
+        }
+
+        if (!data.complaint.trim()) {
+        errors.complaint = 'Complaint Is Required';
+        }
+        
+        // Add more validation rules as needed (e.g., email format validation)
+
+        return errors;
+    };
 
     const toggleNav = () => {
         if (mNav === "none"){
@@ -93,20 +128,22 @@ const CustomerCare = () => {
                 <div className="lg:flex px-6 lg:px-8 lg:space-x-4">
                     <div className="make-transfer rounded-lg py-2 lg:p-4 space-y-4 text-center w-full">
                         <form onSubmit={handleSubmit} className="my-auto p-4 lg:p-8 rounded-xl space-y-6 lg:space-y-12 bg-cyan-700 shadow-xl shadow-gray-700">
-                            <h1 className="text-xl font-bold lg:text-4xl text-white"><b>LOAN APPLICATION:</b></h1>
+                            <h1 className="text-xl font-bold lg:text-4xl text-white"><b>LODGE A COMPLAINT:</b></h1>
                             <div className="space-y-4 lg:space-y-8 px-2 lg:px-10">
                                 
-                            <select id="banks" class="w-full text-black border-2 border-teal-600 bg-white rounded-lg block ease-in duration-500 p-4">
+                            <select class="w-full text-black border-2 border-teal-600 bg-white rounded-lg block ease-in duration-500 p-4" id="receiver" name="receiver" onChange={handleChange} value={formData.receiver}>
                                     <option selected value="Customer Care">Receiver: Customer Care</option>
                                 </select>
-                                <input className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg ease-in duration-500" name="subject" onChange={handleChange} value={inputs.subject} type="text"
+                                <input className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg ease-in duration-500" id="subject" name="subject" onChange={handleChange} value={formData.subject} type="text"
                                             placeholder="Type Your Subject"/>
-                                <input className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg ease-in duration-500" name="complaint" onChange={handleChange} value={inputs.complaint} type="text"
-                                    placeholder="Type Your Complaint"/>
+                                {errors.subject && <p className="error text-red-700 font-bold">{errors.subject}</p>}
+                                <textarea className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg ease-in duration-500" id="complaint" name="complaint" onChange={handleChange} value={formData.complaint} type="text"
+                                    rows="10" cols="5" placeholder="Type Your Complaint"></textarea> <br/>
+                                {errors.complaint && <p className="error text-red-700 font-bold">{errors.complaint}</p>}
                             </div>
                             <div className="px-2 lg:px-10">
                                 <button
-                                    className="flex justify-center text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"><b className="flex">APPLY FOR LOAN </b></button>
+                                    className="flex justify-center text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"><b className="flex">SUBMIT TICKET</b></button>
                             </div>
                         </form>
                     </div>
