@@ -143,7 +143,7 @@ const CustomerCare = () => {
                             </div>
                             <div className="px-2 lg:px-10">
                                 <button
-                                    className="flex justify-center text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"><b className="flex">SUBMIT TICKET</b></button>
+                                    className="flex justify-center text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"><b className="flex">SUBMIT TICKETS</b></button>
                             </div>
                         </form>
                     </div>
