@@ -44,14 +44,14 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
         </div>
 
         <div className="nav text-lg text-cyan-900 font-medium">
-          <NavLink to={`/dashboard/${user.userID}`}><h1 className="flex text-xl px-8 p-2 items-center"><CgProfile className="text-2xl mr-2" /> Dashboard</h1></NavLink>
-          <NavLink to={`/transfer/${user.userID}`}><h1 className="flex text-xl px-8 p-2 items-center"><BiTransferAlt className="text-2xl mr-2" /> Make Transfer</h1></NavLink>
-          <NavLink to={`/account-summary/${user.userID}`}><h1 className="flex text-xl px-8 p-2 items-center"><BiUser className="text-2xl mr-2" /> My Account</h1></NavLink>
-          <NavLink to={`/account-statement/${user.userID}`}><h1 className="flex text-xl px-8 p-2 items-center"><IoIosPaper className="text-2xl mr-2" /> Account Statement</h1></NavLink>
-          <NavLink to={`/change-password/${user.userID}`}><h1 className="flex text-xl px-8 p-2 items-center"><FaLock className="text-2xl mr-2" /> Change Password</h1></NavLink>
-          <NavLink to={`/loan-application/${user.userID}`}><h1 className="flex text-xl px-8 p-2 items-center"><FaPenAlt className="text-2xl mr-2" /> Loan Application</h1></NavLink>
-          <NavLink to={`/customer-care/${user.userID}`}><h1 className="flex text-xl px-8 p-2 items-center"><FaHeadset className="text-2xl mr-2" /> Customer Care</h1></NavLink>
-          <button className="flex text-xl px-8 p-2 items-center" onClick={handleLogout}><MdOutlineExitToApp className="text-2xl mr-2" /> Log Out</button>
+          <NavLink to={`/dashboard/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><CgProfile className="text-3xl mr-2" /> Dashboard</h1></NavLink>
+          <NavLink to={`/transfer/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><BiTransferAlt className="text-3xl mr-2" /> Make Transfer</h1></NavLink>
+          <NavLink to={`/account-summary/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><BiUser className="text-3xl mr-2" /> My Account</h1></NavLink>
+          <NavLink to={`/account-statement/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><IoIosPaper className="text-3xl mr-2" /> Account Statement</h1></NavLink>
+          <NavLink to={`/change-password/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><FaLock className="text-3xl mr-2" /> Change Password</h1></NavLink>
+          <NavLink to={`/loan-application/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><FaPenAlt className="text-3xl mr-2" /> Loan Application</h1></NavLink>
+          <NavLink to={`/customer-care/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><FaHeadset className="text-3xl mr-2" /> Customer Care</h1></NavLink>
+          <button className="flex text-2xl px-8 p-2 items-center" onClick={handleLogout}><MdOutlineExitToApp className="text-3xl mr-2" /> Log Out</button>
         </div>
       </div>
 
