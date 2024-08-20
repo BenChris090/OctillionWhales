@@ -36,14 +36,14 @@ const AccountStatement = () => {
 
     return (
         <Layout pageTitle="Account Statement" pageIcon={FaWallet}>
-            <div className="flex flex-col px-4 lg:px-8 py-4">
+            <div className="flex flex-col px-4 lg:px-8 py-4 h-screen w-full">
                 <h2 className="text-2xl lg:text-3xl font-medium">Welcome: {user.accountHolderName}</h2>
                 <p className="text-lg lg:text-xl">Account Number: {user.accountNumber}</p>
                 <p className="text-lg lg:text-xl">Account Balance: {user.currencySign}{user.balance}</p>
                 <hr className="h-1 bg-black my-4" />
                 <h3 className="text-xl font-medium">Recent Transactions:</h3>
                 <div className="overflow-x-auto overflow-y-auto">
-                    <table className="min-w-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-collapse border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center">
+                    <table className="min-w-full min-h-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-collapse border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center">
                         <thead>
                             <tr className="divide-x-2 divide-cyan-900">
                                 <th className="py-2 px-8">Date</th>

@@ -13,10 +13,16 @@
       "country": "United States",
       "city": "Broad Street Aberdeen",
       "address": "The Point St. Nicholas House Broad Street Aberdeen AB10 1AR",
-      "balance": 10000,
+      "balance": 25000,
       "currencySign": "$",
       "currency": "USD",
-      "transactions": []
+      "transactions": [{
+        "date": "2024-08-20", 
+        "narration": "Salary Credit", 
+        "referenceCode": "TXN123456789", 
+        "debit": "", 
+        "credit": 10000,
+        "balance": 25000}]
     },
     {
       "accountHolderName": "Sarah Johnson",
