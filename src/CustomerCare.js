@@ -30,7 +30,7 @@ const CustomerCare = () => {
 
   return (
     <Layout pageTitle="Customer Care" pageIcon={FaHeadset}>
-      <div className="bg-gradient-to-r from-teal-500 to-cyan-500 py-2 lg:py-14 lg:p-4 space-y-4 text-center h-full w-full">
+      <div className="bg-gradient-to-r from-teal-500 to-cyan-500 py-8 lg:py-14 p-4 space-y-4 text-center h-screen w-full">
         <form onSubmit={handleSubmit} className="my-auto p-4 lg:p-8 rounded-xl space-y-6 bg-white shadow-xl shadow-gray-700">
           <label htmlFor="message" className="block text-gray-700">Your Message</label>
           <textarea
