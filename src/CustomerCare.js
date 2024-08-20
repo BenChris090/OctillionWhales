@@ -120,7 +120,7 @@ const CustomerCare = () => {
             </div>
             <div className="w-full lg:w-3/4 space-y-4 items-center bg-gray-200 lg:py-10 lg:h-screen overflow-y-auto">
                 <div className="text-lg w-full text-white bg-cyan-900 lg:top-0 lg:fixed font-medium justify-between lg:justify-normal lg:space-x-2 flex px-4 lg:px-8 items-center lg:h-12 my-auto">
-                    <h1 className="flex p-2 items-center"><CgProfile className="mr-2"/> Make Transfer</h1>
+                    <h1 className="flex p-2 items-center"><CgProfile className="mr-2"/> Customer Care</h1>
                     <h1 className="flex lg:hidden p-2 items-center"><FaBars className="mNav text-2xl flex text-cyan-500 my-2 lg:hidden" onClick={setNav}/></h1>
                     <h1 className="hidden lg:flex pl-[28rem] p-2 items-center"><FaWallet className="mr-2"/> $467,688.00</h1>
                     <h1 className="hidden lg:flex p-2 items-center"><MdOutlineExitToApp className="mr-2"/> LogOut</h1>
@@ -135,15 +135,15 @@ const CustomerCare = () => {
                                     <option selected value="Customer Care">Receiver: Customer Care</option>
                                 </select>
                                 <input className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg ease-in duration-500" id="subject" name="subject" onChange={handleChange} value={formData.subject} type="text"
-                                            placeholder="Type Your Subject"/>
+                                            placeholder="Enter Your Subject"/>
                                 {errors.subject && <p className="error text-red-700 font-bold">{errors.subject}</p>}
                                 <textarea className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg ease-in duration-500" id="complaint" name="complaint" onChange={handleChange} value={formData.complaint} type="text"
-                                    rows="10" cols="5" placeholder="Type Your Complaint"></textarea> <br/>
+                                    rows="10" cols="5" placeholder="Enter Your Complaint"></textarea> <br/>
                                 {errors.complaint && <p className="error text-red-700 font-bold">{errors.complaint}</p>}
                             </div>
                             <div className="px-2 lg:px-10">
                                 <button
-                                    className="flex justify-center text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"><b className="flex">SUBMIT TICKETS</b></button>
+                                    className="flex justify-center text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"><b className="flex">SUBMIT TICKET</b></button>
                             </div>
                         </form>
                     </div>

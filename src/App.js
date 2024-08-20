@@ -26,19 +26,19 @@ import Four0Four from './404';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App h-full">
         <div className="content">
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/open-an-account' element={<SignUp/>}/>
-            <Route path='/dashboard' element={<Dashboard/>}/>
-            <Route path='/transfer' element={<Transfer/>}/>
-            <Route path='/account-summary' element={<AccountSummary/>}/>
-            <Route path='/account-statement' element={<AccountStatement/>}/>   
-            <Route path='/change-password' element={<ChangePassword/>}/>   
-            <Route path='/loan-application' element={<LoanApplication/>}/>    
-            <Route path='/customer-care' element={<CustomerCare/>}/>        
+            <Route path='/dashboard/:userID' element={<Dashboard/>}/>
+            <Route path='/transfer/:userID' element={<Transfer/>}/>
+            <Route path='/account-summary/:userID' element={<AccountSummary/>}/>
+            <Route path='/account-statement/:userID' element={<AccountStatement/>}/>   
+            <Route path='/change-password/:userID' element={<ChangePassword/>}/>   
+            <Route path='/loan-application/:userID' element={<LoanApplication/>}/>    
+            <Route path='/customer-care/:userID' element={<CustomerCare/>}/>        
             <Route path='/mobile' element={<Mobile/>}/>
             <Route path='/card' element={<Card/>}/>
             <Route path='/atm' element={<Atm/>}/>
@@ -51,7 +51,7 @@ function App() {
             <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/404' element={<Four0Four/>}/>
-          	<Route path="*" element={<Navigate to="/404" />}/>
+          	<Route path="*" element={<Navigate to="/404"/>}/>
           </Routes>
         </div>        
       </div>

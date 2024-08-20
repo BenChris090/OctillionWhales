@@ -32,7 +32,7 @@ const ChangePassword = () => {
 
         if (Object.keys(validationErrors).length === 0) {
         // If there are no validation errors, submit the form (you can implement form submission logic here)
-        alert('Form submitted!');
+        alert('Password Changed Successfully');
         } else {
         // If there are validation errors, set the errors state to display them to the user
         setErrors(validationErrors);
@@ -145,7 +145,7 @@ const ChangePassword = () => {
             </div>
             <div className="w-full lg:w-3/4 space-y-4 items-center bg-gray-200 lg:py-10 lg:h-screen overflow-y-auto">
                 <div className="text-lg w-full text-white bg-cyan-900 lg:top-0 lg:fixed font-medium justify-between lg:justify-normal lg:space-x-2 flex px-4 lg:px-8 items-center lg:h-12 my-auto">
-                    <h1 className="flex p-2 items-center"><CgProfile className="mr-2"/> Make Transfer</h1>
+                    <h1 className="flex p-2 items-center"><CgProfile className="mr-2"/> Change Account Password</h1>
                     <h1 className="flex lg:hidden p-2 items-center"><FaBars className="mNav text-2xl flex text-cyan-500 my-2 lg:hidden" onClick={setNav}/></h1>
                     <h1 className="hidden lg:flex pl-[28rem] p-2 items-center"><FaWallet className="mr-2"/> $467,688.00</h1>
                     <h1 className="hidden lg:flex p-2 items-center"><MdOutlineExitToApp className="mr-2"/> LogOut</h1>

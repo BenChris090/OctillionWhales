@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaChevronDown, FaTimes } from "react-icons/fa";
-import { FiChevronDown } from "react-icons/fi";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -44,7 +43,7 @@ const Navbar = () => {
             </div>
             {/* mobile nav ends here */}
             <Link to="/" className="flex items-center"><img src={ ICE_LOGO } className="h-12 mr-3 sm:h-16 lg:h-16" alt="Logo" /><span className="self-center text-3xl font-semibold whitespace-nowrap text-cyan-500 lg:text-4xl">ICE_BERG</span></Link>
-            <div className="bars space-x-2 flex items-center ml-36">
+            <div className="bars space-x-2 flex items-center ml-auto">
                 <FaBars className="text-2xl flex text-cyan-500 my-2 lg:hidden" onClick={setNav}/>
             </div>
             <div className="links hidden items-center text-center lg:flex lg:py-auto lg:space-x-14">

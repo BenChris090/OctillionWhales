@@ -1,0 +1,55 @@
+{
+  "accounts": [
+    {
+      "accountHolderName": "Jayden Davidson",
+      "accountNumber": "80207256",
+      "accountStatus": "Active",
+      "accountType": "Current Account",
+      "userID": "Dajdenson27683",
+      "passkey": "****** (Reset Passkey)",
+      "pinCode": "MCTBGB2L",
+      "email": "Jaydendavidson101@gmail.com",
+      "telephoneNo": "+15014486932",
+      "country": "United States",
+      "city": "Broad Street Aberdeen",
+      "address": "The Point St. Nicholas House Broad Street Aberdeen AB10 1AR",
+      "balance": 0,
+      "currency": "USD",
+      "transactions": []
+    },
+    {
+      "accountHolderName": "Sarah Johnson",
+      "accountNumber": "65432100",
+      "accountStatus": "Active",
+      "accountType": "Savings Account",
+      "userID": "SJohnson1234",
+      "passkey": "****** (Reset Passkey)",
+      "pinCode": "PKR9876X",
+      "email": "sarah.johnson@example.com",
+      "telephoneNo": "+1234567890",
+      "country": "Canada",
+      "city": "Toronto",
+      "address": "123 Elm Street, Toronto, ON M5J 2S2",
+      "balance": 5000,
+      "currency": "CAD",
+      "transactions": []
+    },
+    {
+      "accountHolderName": "Robert Smith",
+      "accountNumber": "98765432",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "userID": "RSmith5678",
+      "passkey": "****** (Reset Passkey)",
+      "pinCode": "WXY1234Z",
+      "email": "robert.smith@example.com",
+      "telephoneNo": "+9876543210",
+      "country": "United Kingdom",
+      "city": "London",
+      "address": "456 High Street, London, SW1A 1AA",
+      "balance": 2500,
+      "currency": "GBP",
+      "transactions": []
+    }
+  ]
+}
