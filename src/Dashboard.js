@@ -80,35 +80,37 @@ const Dashboard = () => {
                     </section>
 
                     {/* Recent Transactions Table */}
-                    <section className="mt-6 overflow-x-auto">
+                    <section className="mt-6">
                         <h1 className="text-3xl font-medium">Recent Transactions</h1>
-                        <table className="w-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center mt-4">
-                            <caption className="caption-bottom p-2">Transaction Records</caption>
-                            <thead>
-                                <tr className="divide-x-2 divide-cyan-900">
-                                    <th className="py-2 px-4">Date</th>
-                                    <th className="py-2 px-8">Narration</th>
-                                    <th className="py-2 px-4">Reference Code</th>
-                                    <th className="py-2 px-4">Debit (Dr)</th>
-                                    <th className="py-2 px-4">Credit (Cr)</th>
-                                    <th className="py-2 px-4">Balance</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {user.transactions
-                                    .filter(t => t.userID === user.userID)
-                                    .map((transaction) => (
-                                        <tr key={transaction.id} className="divide-x-2 divide-cyan-900">
-                                            <td className="py-2 px-4">{transaction.date}</td>
-                                            <td className="py-2 px-8">{transaction.narration}</td>
-                                            <td className="py-2 px-4">{transaction.referenceCode}</td>
-                                            <td className="py-2 px-4">{transaction.debit}</td>
-                                            <td className="py-2 px-4">{transaction.credit}</td>
-                                            <td className="py-2 px-4">{transaction.balance}</td>
-                                        </tr>
-                                    ))}
-                            </tbody>
-                        </table>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center mt-4">
+                                <caption className="caption-bottom p-2">Transaction Records</caption>
+                                <thead>
+                                    <tr className="divide-x-2 divide-cyan-900">
+                                        <th className="py-2 px-4">Date</th>
+                                        <th className="py-2 px-8">Narration</th>
+                                        <th className="py-2 px-4">Reference Code</th>
+                                        <th className="py-2 px-4">Debit (Dr)</th>
+                                        <th className="py-2 px-4">Credit (Cr)</th>
+                                        <th className="py-2 px-4">Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {user.transactions
+                                        .filter(t => t.userID === user.userID)
+                                        .map((transaction) => (
+                                            <tr key={transaction.id} className="divide-x-2 divide-cyan-900">
+                                                <td className="py-2 px-4">{transaction.date}</td>
+                                                <td className="py-2 px-8">{transaction.narration}</td>
+                                                <td className="py-2 px-4">{transaction.referenceCode}</td>
+                                                <td className="py-2 px-4">{transaction.debit}</td>
+                                                <td className="py-2 px-4">{transaction.credit}</td>
+                                                <td className="py-2 px-4">{transaction.balance}</td>
+                                            </tr>
+                                        ))}
+                                </tbody>
+                            </table>
+                        </div>
                     </section>
                 </main>
             </div>
