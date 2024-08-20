@@ -11,7 +11,7 @@ const Topbar = () => {
                     <b> | </b>
                     <NavLink to="/open-an-account"><p>Open An Account</p></NavLink>
                 </div>
-                <div className="flex pl-[11rem] lg:font-bold lg:px-2 lg:pl-64">
+                <div className="flex place-content-end lg:font-bold lg:px-2 lg:pl-64">
                     <h1 className="flex space-x-2"><BsGlobe2 className="text-center text-lg lg:text-xl my-auto"/><span className="border-white border-2 rounded-xl p-2"> Select Language</span></h1>
                 </div>
         </div>
