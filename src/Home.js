@@ -36,17 +36,17 @@ const Home = () => {
                 <h1 className="text-lg text-center lg:text-4xl"><b>Learn, grow and focus on what matters</b></h1>
                 <p className="text-lg text-center text-cyan-700 md:font-semibold lg:text-2xl">World Leading Finance Institution</p>
                 <section className="px-4 py-10 justify-center items-center space-y-4 lg:flex lg:space-y-0 lg:space-x-4 lg:px-24">
-                    <div className="p-4 space-y-2 w-screen lg:px-4 lg:h-[25rem] lg:w-1/3 lg:max-w-52">
-                        <img src={ HOME_PIC1 } className=" h-48 lg:mx-auto lg:h-52" alt="Dog Pic" />
+                    <div className="p-4 space-y-2 lg:px-4 lg:h-[25rem] lg:w-1/3 lg:max-w-52">
+                        <img src={ HOME_PIC1 } className=" h-48 mx-auto lg:h-52" alt="Dog Pic" />
                         <h2 className="text-lg lg:text-xl"><b>Accounts</b></h2>
                         <p className="text-justify">We offer a wide range of accounts to suit lifestyles & needs. Free and paid-for add-ons are available to give total control. Download, Fill & Submit at our Branch. Minimum account size of $5,000</p>
                     </div>
-                    <div className="p-4 space-y-2 w-screen lg:px-4 lg:h-[25rem] lg:w-1/3 lg:max-w-52">
-                        <img src={ HOME_PIC2 } className=" h-48 lg:mx-auto lg:h-52" alt="Dog Pic" />
+                    <div className="p-4 space-y-2 lg:px-4 lg:h-[25rem] lg:w-1/3 lg:max-w-52">
+                        <img src={ HOME_PIC2 } className=" h-48 mx-auto lg:h-52" alt="Dog Pic" />
                         <h2 className="text-lg lg:text-xl"><b>Reliable Customer Service</b></h2>
                         <p className="text-justify">We are synonymous with innovation, building excellence, superior financial performance and creating role models for society.</p>
                     </div>
-                    <div className="p-4 space-y-2 w-screen lg:px-4 lg:h-[25rem] lg:w-1/3 lg:max-w-52">
+                    <div className="p-4 space-y-2 lg:px-4 lg:h-[25rem] lg:w-1/3 lg:max-w-52">
                         <img src={ HOME_PIC3 } className=" h-48 mx-auto lg:h-52" alt="Dog Pic" />
                         <h2 className="text-lg lg:text-xl"><b>Round the Clock Banking</b></h2>
                         <p className="text-justify">Access your personal account information with ease, transfer funds securely whenever you want, wherever you want.</p>
