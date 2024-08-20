@@ -4,7 +4,7 @@ import Home from './Home';
 import Login from './Login';
 import SignUp from './SignUp';
 import Dashboard from './Dashboard';
-import Transfer from './Transfer';
+import MakeTransfer from './MakeTransfer';
 import AccountSummary from './AccuntSummary';
 import AccountStatement from './AccountStatement';
 import ChangePassword from './ChangePassword';
@@ -37,7 +37,7 @@ function App() {
                             
                             {/* Protected Routes */}
                             <Route path='/dashboard/:userID' element={<ProtectedRoute element={Dashboard} />} />
-                            <Route path='/transfer/:userID' element={<ProtectedRoute element={Transfer} />} />
+                            <Route path='/transfer/:userID' element={<ProtectedRoute element={MakeTransfer} />} />
                             <Route path='/account-summary/:userID' element={<ProtectedRoute element={AccountSummary} />} />
                             <Route path='/account-statement/:userID' element={<ProtectedRoute element={AccountStatement} />} />
                             <Route path='/change-password/:userID' element={<ProtectedRoute element={ChangePassword} />} />
