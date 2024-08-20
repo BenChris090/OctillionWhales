@@ -53,7 +53,7 @@ const Dashboard = () => {
 
     return (
         <Layout pageTitle="Dashboard" pageIcon={CgProfile}>
-            <div className="bg-gray-100 min-h-screen w-full">
+            <div className="bg-gray-100 min-h-full w-full">
                 {/* Main Content */}
                 <main className="px-6 lg:px-8 py-4">
                     <section className="space-y-4">

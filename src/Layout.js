@@ -79,7 +79,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
           <button className="flex px-8 p-2 items-center" onClick={handleLogout}><MdOutlineExitToApp className="mr-2" /> Log Out</button>
         </div>
       </div>
-      <div className="block w-full">
+      <div className="block w-3/4">
         {/* Page Header */}
         <div className="w-full overflow-y-hidden bg-cyan-900 text-white flex items-center justify-between px-4 lg:px-8 py-4 lg:max-h-12">
             <div className="flex items-center">
@@ -101,7 +101,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
         </div>
 
         {/* Main Content */}
-        <div className="w-full space-y-4 bg-gray-200 lg:h-screen overflow-y-auto">
+        <div className="w-full space-y-4 bg-gray-200 lg:h-full overflow-y-auto">
             {children}
         </div>
       </div>

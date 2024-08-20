@@ -107,7 +107,7 @@ const MakeTransfer = () => {
 
     return (
         <Layout pageTitle="Make Transfer" pageIcon={BiTransferAlt}>
-            <div className="make-transfer p-4 lg:py-14 lg:px-4 space-y-4 text-center h-screen w-screen bg-gradient-to-r from-teal-500 to-cyan-500">
+            <div className="make-transfer p-4 lg:py-auto lg:px-4 space-y-4 text-center h-full w-full bg-gradient-to-r from-teal-500 to-cyan-500">
                 <form onSubmit={handleSubmit} className="my-auto p-4 lg:p-8 rounded-xl space-y-6 bg-white shadow-xl shadow-gray-700">
                     <h1 className="text-2xl font-bold lg:text-4xl text-cyan-900 mb-4">
                         <b>Make Transfer:</b>

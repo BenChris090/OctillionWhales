@@ -48,7 +48,7 @@ const AccountSummary = () => {
 
     return (
         <Layout pageTitle="Account Summary" pageIcon={BiUser}>
-            <div className="bg-gray-100 min-h-screen py-6 lg:py-12">
+            <div className="bg-gray-100 min-h-full py-6 lg:py-12">
                 <div className="container mx-auto px-4">
                     {/* Account Details and Contact Information */}
                     <div className="grid gap-6 lg:grid-cols-2">
