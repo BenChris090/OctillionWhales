@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { FaMoneyBillWave, FaAngleDoubleRight, FaCheck, FaWallet, FaTimes, FaBars } from 'react-icons/fa';
+import { FaAngleDoubleRight } from 'react-icons/fa';
+import { BiTransferAlt } from 'react-icons/bi';
 import { useUser } from './UserContext'; // Import the useUser hook
 import Layout from './Layout'; // Import the Layout component
 import useFetch from './useFetch'; // Custom hook for fetching data
@@ -105,7 +106,7 @@ const MakeTransfer = () => {
     if (error) return <div>{error}</div>;
 
     return (
-        <Layout pageTitle="Make Transfer" pageIcon={FaMoneyBillWave}>
+        <Layout pageTitle="Make Transfer" pageIcon={BiTransferAlt}>
             <div className="make-transfer p-4 lg:py-14 lg:px-4 space-y-4 text-center h-screen w-screen bg-gradient-to-r from-teal-500 to-cyan-500">
                 <form onSubmit={handleSubmit} className="my-auto p-4 lg:p-8 rounded-xl space-y-6 bg-white shadow-xl shadow-gray-700">
                     <h1 className="text-2xl font-bold lg:text-4xl text-cyan-900 mb-4">

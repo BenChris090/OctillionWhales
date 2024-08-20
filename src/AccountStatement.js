@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Layout from './Layout'; // Import the Layout component
-import { FaWallet } from 'react-icons/fa';
+import { IoIosPaper } from 'react-icons/io';
 import useFetch from './useFetch'; // Custom hook for fetching data
 import Spinner from './Spinner'; // Loading spinner
 import { useUser } from './UserContext'; // Import the useUser hook
@@ -35,7 +35,7 @@ const AccountStatement = () => {
     if (!user) return <div>No user found</div>;
 
     return (
-        <Layout pageTitle="Account Statement" pageIcon={FaWallet}>
+        <Layout pageTitle="Account Statement" pageIcon={IoIosPaper}>
             <div className="flex flex-col px-4 lg:px-8 py-4 h-screen w-full">
                 <h2 className="text-2xl lg:text-3xl font-medium">Welcome: {user.accountHolderName}</h2>
                 <p className="text-lg lg:text-xl">Account Number: {user.accountNumber}</p>

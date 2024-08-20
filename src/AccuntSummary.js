@@ -6,6 +6,7 @@ import Spinner from './Spinner'; // Loading spinner
 import { useUser } from './UserContext'; // Import the useUser hook
 
 import { FaWallet, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { BiUser } from 'react-icons/bi';
 import { MdOutlineExitToApp } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import { FaCheck } from 'react-icons/fa';
@@ -37,7 +38,7 @@ const AccountSummary = () => {
     if (!user) return <div>No user found</div>;
 
     return (
-        <Layout pageTitle="Account Summary" pageIcon={CgProfile}>
+        <Layout pageTitle="Account Summary" pageIcon={BiUser}>
             <div className="bg-gray-100 min-h-screen py-6 lg:py-12">
                 <div className="container mx-auto px-4">
                     {/* Account Details and Contact Information */}
