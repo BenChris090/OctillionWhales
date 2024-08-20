@@ -96,9 +96,7 @@ const Dashboard = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {user.transactions
-                                        .filter(t => t.userID === user.userID)
-                                        .map((transaction) => (
+                                    {user.transactions.map((transaction) => (
                                             <tr key={transaction.id} className="divide-x-2 divide-cyan-900">
                                                 <td className="py-2 px-4">{transaction.date}</td>
                                                 <td className="py-2 px-8">{transaction.narration}</td>

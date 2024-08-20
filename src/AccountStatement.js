@@ -61,7 +61,7 @@ const AccountStatement = () => {
                                 </tr>
                             ) : (
                                 transactions.map((transaction, index) => (
-                                    <tr key={index} className="divide-x-2 divide-cyan-900">
+                                    <tr key={transaction.id} className="divide-x-2 divide-cyan-900">
                                         <td className="py-2 px-8">{transaction.date}</td>
                                         <td className="py-2 px-16">{transaction.narration}</td>
                                         <td className="py-2 px-8">{transaction.referenceCode}</td>
