@@ -33,6 +33,15 @@ const AccountSummary = () => {
         }
     }, [user, navigate]);
 
+    const handleLogout = () => {
+        const currentUser = JSON.parse(localStorage.getItem('user'));
+        if (currentUser && currentUser.accountStatus === 'Active') {
+          const updatedUser = { ...currentUser, accountStatus: 'Inactive' };
+          localStorage.setItem('user', JSON.stringify(updatedUser));
+          setUser(null);
+        }
+      };
+
     if (isPending) return <Spinner />;
     if (error) return <div>{error}</div>;
     if (!user) return <div>No user found</div>;
@@ -71,7 +80,7 @@ const AccountSummary = () => {
                     {/* Logout Button */}
                     <div className="mt-6 text-center">
                         <button
-                            onClick={() => navigate('/logout')}
+                            onClick={handleLogout}
                             className="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md flex items-center justify-center mx-auto transition duration-300 hover:bg-red-600"
                         >
                             <MdOutlineExitToApp className="mr-2 text-xl" />
