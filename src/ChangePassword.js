@@ -34,7 +34,7 @@ const ChangePassword = () => {
     return (
         <Layout pageTitle="Change Password" pageIcon={FaLock}>
 
-            <div className="bg-gradient-to-r from-teal-500 to-cyan-500 py-8 lg:py-14 p-4 space-y-4 text-center h-full w-full">
+            <div className="bg-gradient-to-r from-teal-500 to-cyan-500 py-8 lg:py-14 p-4 space-y-4 text-center h-screen lg:h-full w-full">
                 <form onSubmit={handleChangePassword} className="my-auto p-4 lg:p-8 rounded-xl space-y-6 bg-white shadow-xl shadow-gray-700">
                     <h1 className="text-2xl font-bold lg:text-4xl text-cyan-900 mb-4">
                         <b>Change Your Password:</b>
