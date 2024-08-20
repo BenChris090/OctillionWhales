@@ -42,7 +42,7 @@ const AccountStatement = () => {
                 <p className="text-lg lg:text-xl">Account Balance: {user.currencySign}{user.balance}</p>
                 <hr className="h-1 bg-black my-4" />
                 <h3 className="text-xl font-medium">Recent Transactions:</h3>
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto overflow-y-auto">
                     <table className="min-w-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-collapse border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center">
                         <thead>
                             <tr className="divide-x-2 divide-cyan-900">
