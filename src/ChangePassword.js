@@ -20,7 +20,7 @@ const ChangePassword = () => {
             setMessage('Passwords do not match');
             return;
         }
-        if (currentPassword === user.password) {
+        if (currentPassword === user.passkey) {
             const updatedUser = { ...user, password: newPassword };
             localStorage.setItem('user', JSON.stringify(updatedUser));
             setUser(updatedUser);

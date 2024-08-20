@@ -60,7 +60,7 @@ const Login = () => {
             {error && <div className="text-red-500">{error}</div>}
             {isPending && <Spinner />}
             {!isPending && !error && !isLoggedIn && (
-                <form className="m-auto p-8 rounded-xl space-y-12 lg:space-y-8 bg-cyan-900 shadow-xl shadow-gray-700 max-w-md lg:max-w-lg">
+                <form className="mx-auto my-auto p-8 rounded-xl space-y-12 lg:space-y-8 bg-cyan-900 shadow-xl shadow-gray-700 max-w-md lg:max-w-lg">
                     <h1 className="text-4xl text-white"><b>LOGIN:</b></h1>
                     <input
                         className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg ease-in duration-500 mt-4"
