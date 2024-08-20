@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useUser } from './UserContext.js';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import useFetch from "./useFetch.js";
@@ -7,7 +7,7 @@ import Spinner from './Spinner';
 
 const Login = () => {
     const navigate = useNavigate();
-    const { setUser } = useUser();
+    const { user, setUser } = useUser();
 
     const [userID, setUserID] = useState('');
     const [password, setPassword] = useState('');
@@ -15,6 +15,12 @@ const Login = () => {
     
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
+    
+    useEffect(() => {
+      if (user) {
+          navigate(`/dashboard/${user.userID}`);
+      }
+  }, [user, navigate]);
 
     const handleTextChange = (event) => {
         setUserID(event.target.value);
