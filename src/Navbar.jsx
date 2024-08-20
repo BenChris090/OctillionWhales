@@ -22,7 +22,7 @@ const Navbar = () => {
     return ( 
         <nav className="flex p-2 px-auto items-center justify-center bg-white">
             {/* mobile nav starts here */}
-            <div id="mNav" className="h-screen w-96 hidden z-0 fixed left-0 top-0 bg-white overflow-x-hidden overflow-y-auto pt-28 ease-in duration-500">
+            <div id="mNav" className="h-screen w-screen hidden z-0 fixed left-0 top-0 bg-white overflow-x-hidden overflow-y-auto pt-28 ease-in duration-500">
                 <FaTimes className="text-2xl text-cyan-500 absolute top-5 right-8" onClick={setNav}/>
                 <NavLink to="/login" style={({ isActive }) => (isActive ? {color: '#06b6d4'} : {color: '#2F4F4F'})}  className="mt-5 text-center space-y-2 block text-xl">Internet Banking</NavLink>
                 <div className="Mdropdown mt-10 text-center justify-center space-y-2 block text-xl w-full">
