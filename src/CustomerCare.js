@@ -4,6 +4,7 @@ import { FaHeadset } from 'react-icons/fa';
 import { useUser } from './UserContext'; // Import the useUser hook
 import Layout from './Layout'; // Import the Layout component
 import useFetch from './useFetch'; // Import the custom hook for data fetching
+import Spinner from './Spinner';
 
 const CustomerCare = () => {
   const { userID } = useParams();
@@ -25,7 +26,7 @@ const CustomerCare = () => {
     setAIResponse(result.reply);
   };
 
-  if (isPending) return <div>Loading...</div>;
+  if (isPending) return <Spinner/>;
   if (error) return <div>{error}</div>;
 
   return (
