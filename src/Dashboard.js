@@ -88,7 +88,7 @@ const Dashboard = () => {
                                 <thead>
                                     <tr className="divide-x-2 divide-cyan-900">
                                         <th className="py-2 px-4">Date</th>
-                                        <th className="py-2 px-4">Narration</th>
+                                        <th className="py-2 px-4 w-1/2">Narration</th>
                                         <th className="py-2 px-4">Reference Code</th>
                                         <th className="py-2 px-4">Debit (Dr)</th>
                                         <th className="py-2 px-4">Credit (Cr)</th>
@@ -99,7 +99,7 @@ const Dashboard = () => {
                                     {user.transactions.map((transaction) => (
                                             <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
                                                 <td className="py-2 px-4">{transaction.date}</td>
-                                                <td className="py-2 px-4">{transaction.narration}</td>
+                                                <td className="py-2 px-4 w-1/2">{transaction.narration}</td>
                                                 <td className="py-2 px-4">{transaction.referenceCode}</td>
                                                 <td className="py-2 px-4">{transaction.debit}</td>
                                                 <td className="py-2 px-4">{transaction.credit}</td>
