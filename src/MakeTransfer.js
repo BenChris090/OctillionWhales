@@ -205,7 +205,7 @@ const MakeTransfer = () => {
                             </select>
                         </div>
                     </div>
-                    {message && <div className="flex text-green-700 font-bold">{message} <FaCheck className="mx-2 my-auto"/></div>}
+                    {message && <div className="flex text-green-700 text-center px-auto justify-center place-content-center font-bold">{message} <FaCheck className="mx-2 my-auto"/></div>}
                     <div className="px-2 lg:px-10">
                         <button
                             type="submit"
