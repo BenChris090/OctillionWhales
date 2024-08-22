@@ -36,6 +36,7 @@ const Login = () => {
 
     const handleLogin = async (event) => {
         event.preventDefault();
+        const newErrors = {};
 
         if (userID && password && data && data.accounts) {
             console.log('Data:', data); // Debugging
@@ -50,7 +51,10 @@ const Login = () => {
             } else {
                 alert('Invalid username or password');
             }
-        } else {
+        } if (!userID || !password){
+            newErrors.error = "All Fields Are Required"
+        } 
+        else {
             alert('Please wait while we fetch the user data.');
         }
     };
@@ -82,7 +86,8 @@ const Login = () => {
                             <FaEye className="mr-2 text-2xl" onClick={togglePassword}/>
                         }
                         {showPassword ? "Hide Password" : "Show Password"}
-                    </p>
+                    </p>                    
+                    {newErrors.error && <div className="text-red-500">{error}</div>}
                     <button
                         className="text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"
                         onClick={handleLogin}
