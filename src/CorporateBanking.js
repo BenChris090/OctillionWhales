@@ -30,7 +30,7 @@ const CorporateBanking = () => {
             <div className="body bg-cyan-700 bg-opacity-20 space-y-2 lg:space-x-2 lg:space-y-0 px-6 lg:px-24 py-8 lg:flex">
                 <div className="w-full lg:w-1/2 space-y-2">
                     <h1 className=" text-3xl py-2"><b>Bank Accounts</b></h1>
-                    <p className="text-lg text-gray-700 font-medium py-2">When you consider the advantages that come with a MCTBank Corporate account, 
+                    <p className="text-lg text-gray-700 font-medium py-2">When you consider the advantages that come with a OWBank Corporate account, 
                     coupled with the support and guidance you receive from your Relationship Manager, you would be right to consider it a valuable business asset.</p>
                     <h1 className="py-4"><NavLink to="/corporate-banking" className="text-white font-medium p-4 rounded-3xl bg-cyan-900">Open A Corporate Account</NavLink></h1>
                 </div>

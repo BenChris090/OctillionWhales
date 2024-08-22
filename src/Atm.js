@@ -22,7 +22,7 @@ const Atm = () => {
             </div>
             <div className="body px-6 py-8 space-y-4 lg:px-24">
                 <p className="text-lg text-gray-700 font-medium py-2">ATM Card gives you peace of mind and reliable access to your money whenever you need and wherever you travel. 
-                24 Hour Banking service, through conveniently located Automated Teller Machines (ATMs). Through our ATMs, you can perform and of the following transactions using your MCTBank MasterCard® 
+                24 Hour Banking service, through conveniently located Automated Teller Machines (ATMs). Through our ATMs, you can perform and of the following transactions using your OWBank MasterCard® 
                 Electron Card:</p>
                 <ul className="space-y-2">
                     <li className="flex text-lg text-gray-700 font-medium items-center"><FaStar className="hidden text-cyan-900 mr-2 lg:flex"></FaStar> Cash Withdrawals</li>

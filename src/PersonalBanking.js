@@ -23,7 +23,7 @@ const PersonalBanking = () => {
             </div>
             <div className="body text-center px-6 lg:px-48 py-8">
                 <h1 className="text-xl lg:text-3xl p-2"><b>Get an account that suits you!</b></h1>
-                <p className="text-lg lg:text-xl text-gray-700 font-medium py-2 lg:px-16">At MCTBank, we believe that the beauty of life lies in the little things that give us a better expression of ourselves, 
+                <p className="text-lg lg:text-xl text-gray-700 font-medium py-2 lg:px-16">At OWBank, we believe that the beauty of life lies in the little things that give us a better expression of ourselves, 
                 make us more social and connect emotionally.</p>
             </div>
             <div className="body bg-cyan-700 bg-opacity-20 space-y-2 lg:space-x-2 lg:space-y-0 px-6 lg:px-24 py-8 lg:flex">

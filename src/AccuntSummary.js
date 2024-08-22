@@ -7,7 +7,7 @@ import { useUser } from './UserContext'; // Import the useUser hook
 
 import { FaWallet, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import { BiUser } from 'react-icons/bi';
-import { MdOutlineExitToApp } from 'react-icons/md';
+import { MdOutlineExitToApp, MdAccountBalance } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import { FaCheck } from 'react-icons/fa';
 
@@ -58,7 +58,7 @@ const AccountSummary = () => {
                             <h2 className="text-xl font-semibold mb-4">Account Details</h2>
                             <div className="space-y-4">
                                 <p className="flex items-center"><CgProfile className="mr-2 text-xl" /><strong className='mr-2'>Account Number:</strong> {user.accountNumber}</p>
-                                <p className="flex items-center"><FaWallet className="mr-2 text-xl" /><strong className='mr-2'>Account Type:</strong> {user.accountType}</p>
+                                <p className="flex items-center"><MdAccountBalance className="mr-2 text-xl" /><strong className='mr-2'>Account Type:</strong> {user.accountType}</p>
                                 <p className="flex items-center"><FaWallet className="mr-2 text-xl" /><strong className='mr-2'>Account Balance:</strong> {user.currencySign}{user.balance.toLocaleString()}</p>
                                 <p className="flex items-center"><FaCheck className="mr-2 text-xl text-green-600" /><strong className='mr-2'>Status:</strong> {user.accountStatus}</p>
                             </div>
