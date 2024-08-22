@@ -12,6 +12,7 @@ const Login = () => {
     const [userID, setUserID] = useState('');
     const [password, setPassword] = useState('');
     const { data, isPending, error } = useFetch('/data/db.json');
+    const [newErrors, setNewErrors] = useState({})
     
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
@@ -36,7 +37,7 @@ const Login = () => {
 
     const handleLogin = async (event) => {
         event.preventDefault();
-        const newErrors = {};
+        const Errors = {};
 
         if (userID && password && data && data.accounts) {
             console.log('Data:', data); // Debugging
@@ -51,10 +52,10 @@ const Login = () => {
             } else {
                 alert('Invalid username or password');
             }
-        } if (!userID || !password){
-            newErrors.error = "All Fields Are Required"
-        } 
-        else {
+        } else if (!userID || !password){
+            Errors.error = "All Fields Are Required"
+            setNewErrors(Errors)
+        } else {
             alert('Please wait while we fetch the user data.');
         }
     };
@@ -87,7 +88,7 @@ const Login = () => {
                         }
                         {showPassword ? "Hide Password" : "Show Password"}
                     </p>                    
-                    {newErrors.error && <div className="text-red-500">{error}</div>}
+                    {newErrors.error && <div className="text-red-700">{error}</div>}
                     <button
                         className="text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"
                         onClick={handleLogin}
