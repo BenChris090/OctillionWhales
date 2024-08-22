@@ -32,7 +32,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
             <img src={ICE_LOGO} className="h-10 mr-3 sm:h-12 lg:h-12" alt="Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">ICE_BERG</span>
           </Link>
-          <FaTimes className="text-2xl m-2 text-cyan-500" onClick={toggleNav} />
+          <FaTimes className="text-2xl m-2 text-cyan-900" onClick={toggleNav} />
         </div>
 
         <div className="profile bg-black text-md text-white font-medium space-y-2 text-center">
@@ -92,7 +92,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
                 {user.currencySign}{user.balance.toLocaleString()}
             </h1>
             <button onClick={toggleNav} className="lg:hidden text-2xl">
-                <FaBars className={`text-cyan-500 ${mNav ? 'hidden' : 'block'}`} />
+                <FaBars className={`text-white ${mNav ? 'hidden' : 'block'}`} />
             </button>
             <button onClick={handleLogout} className="hidden lg:flex items-center text-lg">
                 <MdOutlineExitToApp className="mr-2" /> Log Out

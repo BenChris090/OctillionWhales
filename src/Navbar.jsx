@@ -23,7 +23,7 @@ const Navbar = () => {
         <nav className="flex p-2 px-auto items-center justify-center bg-white">
             {/* mobile nav starts here */}
             <div id="mNav" className="h-screen w-screen hidden z-0 fixed left-0 top-0 bg-white overflow-x-hidden overflow-y-auto pt-28 ease-in duration-500">
-                <FaTimes className="text-2xl text-cyan-500 absolute top-5 right-8" onClick={setNav}/>
+                <FaTimes className="text-2xl text-cyan-900 absolute top-5 right-8" onClick={setNav}/>
                 <NavLink to="/login" style={({ isActive }) => (isActive ? {color: '#06b6d4'} : {color: '#2F4F4F'})}  className="mt-5 text-center space-y-2 block text-xl">Internet Banking</NavLink>
                 <div className="Mdropdown mt-10 text-center justify-center space-y-2 block text-xl w-full">
                     <button className="flex items-center mx-auto">Bank With Us <FaChevronDown className="my-auto ml-2"></FaChevronDown></button>
@@ -44,7 +44,7 @@ const Navbar = () => {
             {/* mobile nav ends here */}
             <Link to="/" className="flex items-center"><img src={ ICE_LOGO } className="h-12 mr-3 sm:h-16 lg:h-16" alt="Logo" /><span className="self-center text-3xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">ICE_BERG</span></Link>
             <div className="bars space-x-2 flex items-center ml-auto">
-                <FaBars className="text-2xl flex text-cyan-500 my-2 lg:hidden" onClick={setNav}/>
+                <FaBars className="text-2xl flex text-cyan-900 my-2 lg:hidden" onClick={setNav}/>
             </div>
             <div className="links hidden items-center text-center lg:flex lg:py-auto lg:space-x-14">
                 <NavLink to="/login" style={({ isActive }) => (isActive ? {color: '#06b6d4'} : {color: 'black'})} className="text-lg hover:text-cyan-900 ease-in duration-500"><b>Internet Banking</b></NavLink>
