@@ -68,7 +68,7 @@ const Login = () => {
             {!isPending && !error && !isLoggedIn && (
                 <form className="mx-auto my-auto p-8 rounded-xl space-y-12 lg:space-y-8 bg-cyan-900 shadow-xl shadow-gray-700 max-w-md lg:max-w-lg">
                     <div className="px-8 py-2">
-                        <Link to="/" className="flex items-center px-[22rem]"><img src={ ICE_LOGO } className="h-12 mr-3 sm:h-16 lg:h-16" alt="Logo" /><span className="self-center text-3xl font-semibold whitespace-nowrap text-cyan-500 lg:text-4xl">ICE_BERG</span></Link>
+                        <Link to="/" className="flex items-center px-auto"><img src={ ICE_LOGO } className="h-12 mr-3 sm:h-16 lg:h-16" alt="Logo" /><span className="self-center text-3xl font-semibold whitespace-nowrap text-cyan-500 lg:text-4xl">ICE_BERG</span></Link>
                     </div>
                     <h1 className="text-4xl text-white"><b>LOGIN:</b></h1>
                     <input
