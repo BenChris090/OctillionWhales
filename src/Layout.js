@@ -35,8 +35,8 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
           <FaTimes className="text-2xl m-2 text-cyan-900" onClick={toggleNav} />
         </div>
 
-        <div className="profile bg-black text-md text-white font-medium space-y-2 text-center">
-          <div className="profilepic p-2">
+        <div className="profile py-4 lg:py-0 bg-black text-md text-white font-medium space-y-2 text-center">
+          <div className="profilepic p-4">
             <img src={ICE_LOGO} alt="profile_pic" className="h-28 border-4 border-cyan-900 m-auto rounded-full" />
           </div>
           <h2>USERID</h2>
