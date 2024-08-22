@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useUser } from './UserContext.js';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
