@@ -77,12 +77,12 @@ const MakeTransfer = () => {
                     account.userID === user.userID ? updatedUser :
                     account.userID === Beneficiary.userID ? updatedRecipient : account
                 );
-
+                
+                setMessage('Transfer successful');
                 localStorage.setItem('user', JSON.stringify(updatedUser));
                 // Ideally, send updatedAccounts to server to persist changes
 
                 setUser(updatedUser);
-                setMessage('Transfer successful');
                 navigate(`/dashboard/${userID}`);
             } else {
                 setErrors(prev => ({ ...prev, beneficiaryAcct: 'Beneficiary not found' }));
