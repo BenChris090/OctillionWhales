@@ -38,10 +38,17 @@
       "country": "Canada",
       "city": "Toronto",
       "address": "123 Elm Street, Toronto, ON M5J 2S2",
-      "balance": 5000,
+      "balance": 30000,
       "currencySign": "$",
       "currency": "CAD",
-      "transactions": []
+      "transactions": [{
+        "id": "1",
+        "date": "2024-08-22", 
+        "narration": "Salary Credit", 
+        "referenceCode": "TXN1326547869", 
+        "debit": "", 
+        "credit": 15000,
+        "balance": 30000}]
     },
     {
       "accountHolderName": "Robert Smith",
