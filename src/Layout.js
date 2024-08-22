@@ -43,7 +43,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
           <p>{user.userID}</p>
         </div>
 
-        <div className="nav text-lg text-cyan-900 font-medium">
+        <div className="nav py-4 space-y-4 text-cyan-900 font-medium">
           <NavLink to={`/dashboard/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><CgProfile className="text-3xl mr-2" /> Dashboard</h1></NavLink>
           <NavLink to={`/transfer/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><BiTransferAlt className="text-3xl mr-2" /> Make Transfer</h1></NavLink>
           <NavLink to={`/account-summary/${user.userID}`}><h1 className="flex text-2xl px-8 p-2 items-center"><BiUser className="text-3xl mr-2" /> My Account</h1></NavLink>
