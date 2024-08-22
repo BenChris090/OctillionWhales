@@ -87,12 +87,12 @@ const Dashboard = () => {
                                 <caption className="caption-bottom p-2">Transaction Records</caption>
                                 <thead>
                                     <tr className="divide-x-2 divide-cyan-900">
-                                        <th className="py-2 px-4">Date</th>
-                                        <th className="py-2 px-4 w-1/2">Narration</th>
-                                        <th className="py-2 px-4">Reference Code</th>
-                                        <th className="py-2 px-4">Debit (Dr)</th>
-                                        <th className="py-2 px-4">Credit (Cr)</th>
-                                        <th className="py-2 px-4">Balance</th>
+                                        <th className="py-2 px-4 w-1/4">Date</th>
+                                        <th className="py-2 px-8 w-1/3">Narration</th>
+                                        <th className="py-2 px-4 w-1/6">Reference Code</th>
+                                        <th className="py-2 px-4 w-1/6">Debit (Dr)</th>
+                                        <th className="py-2 px-4 w-1/6">Credit (Cr)</th>
+                                        <th className="py-2 px-4 w-1/6">Balance</th>
                                     </tr>
                                 </thead>
                                 <tbody>

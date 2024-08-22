@@ -46,12 +46,12 @@ const AccountStatement = () => {
                     <table className="min-w-full min-h-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-collapse border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center">
                         <thead>
                             <tr className="divide-x-2 divide-cyan-900">
-                                <th className="py-2 px-8">Date</th>
-                                <th className="py-2 px-8">Narration</th>
-                                <th className="py-2 px-8">Reference Code</th>
-                                <th className="py-2 px-8">Debit (Dr)</th>
-                                <th className="py-2 px-8">Credit (Cr)</th>
-                                <th className="py-2 px-[2.2rem]">Balance</th>
+                                <th className="py-2 px-8 w-1/4">Date</th>
+                                <th className="py-2 px-16 w-1/3">Narration</th>
+                                <th className="py-2 px-8 w-1/6">Reference Code</th>
+                                <th className="py-2 px-8 w-1/6">Debit (Dr)</th>
+                                <th className="py-2 px-8 w-1/6">Credit (Cr)</th>
+                                <th className="py-2 px-[2.2rem] w-1/6">Balance</th>
                             </tr>
                         </thead>
                         <tbody>
