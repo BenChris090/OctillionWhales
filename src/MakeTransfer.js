@@ -69,13 +69,13 @@ const MakeTransfer = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            const recipient = accounts.find(account => account.userID === formData.beneficiaryAcct);
-            if (recipient) {
+            const Beneficiary = accounts.find(account => account.accountNumber === formData.beneficiaryAcct);
+            if (Beneficiary) {
                 const updatedUser = { ...user, balance: user.balance - parseFloat(formData.amount) };
-                const updatedRecipient = { ...recipient, balance: recipient.balance + parseFloat(formData.amount) };
+                const updatedRecipient = { ...Beneficiary, balance: Beneficiary.balance + parseFloat(formData.amount) };
                 const updatedAccounts = accounts.map(account =>
                     account.userID === user.userID ? updatedUser :
-                    account.userID === recipient.userID ? updatedRecipient : account
+                    account.userID === Beneficiary.userID ? updatedRecipient : account
                 );
 
                 localStorage.setItem('user', JSON.stringify(updatedUser));
@@ -85,7 +85,7 @@ const MakeTransfer = () => {
                 setMessage('Transfer successful');
                 navigate(`/dashboard/${userID}`);
             } else {
-                setErrors(prev => ({ ...prev, beneficiaryAcct: 'Recipient ID not found' }));
+                setErrors(prev => ({ ...prev, beneficiaryAcct: 'Beneficiary not found' }));
             }
         }
     };
