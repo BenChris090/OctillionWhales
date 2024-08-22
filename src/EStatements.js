@@ -22,8 +22,8 @@ const EStatements = () => {
             </div>
             <div className="body px-6 lg:px-24 py-8 space-y-4">
                 <h2 className="text-xl lg:text-3xl"><b>Streamline and simplify with digital statements.</b></h2>
-                <p className="text-md text-gray-700 font-medium">Now you can get your checking and savings account statements online with Maincity Trust Bank eStatements. With eStatements you can organize your account information in one safe, secure place. 
-                Storing and retrieving your records has never been easier! The Maincity Trust Bank e-Statement service delivers your statements securely to your inbox.</p>
+                <p className="text-md text-gray-700 font-medium">Now you can get your checking and savings account statements online with Octillion Whales Bank eStatements. With eStatements you can organize your account information in one safe, secure place. 
+                Storing and retrieving your records has never been easier! The Octillion Whales Bank e-Statement service delivers your statements securely to your inbox.</p>
                 <h2 className="text-xl lg:text-3xl"><b>Features of the e-Statement service:</b></h2>
                 <ul className="space-y-2">
                     <li className="flex text-md lg:text-lg text-gray-700 font-medium items-center"><FaStar className="hidden text-cyan-900 mr-2 lg:flex"></FaStar> Secure delivery of your statements</li>
@@ -34,7 +34,7 @@ const EStatements = () => {
                     <li className="flex text-md lg:text-lg text-gray-700 font-medium items-center"><FaStar className="hidden text-cyan-900 mr-2 lg:flex"></FaStar> Electronic statements are stored for as long as possible on a secure cloud service.</li>
                 </ul>
                 <h2 className="text-xl lg:text-3xl"><b>Who can benefit?</b></h2>
-                <p className="text-md lg:text-lg text-gray-700 font-medium">All Maincity Trust Bank account holders with valid email addresses registered with the bank are eligible for the service.</p>
+                <p className="text-md lg:text-lg text-gray-700 font-medium">All Octillion Whales Bank account holders with valid email addresses registered with the bank are eligible for the service.</p>
             </div>
             <FootBar/>
         </div>

@@ -35,7 +35,7 @@ const Atm = () => {
                     <li className="flex text-lg text-gray-700 font-medium items-center"><FaStar className="hidden text-cyan-900 mr-2 lg:flex"></FaStar> Account Statement Request by mail</li>                    
                 </ul>
                 <h1 className="text-2xl lg:text-4xl font-medium py-2">Acceptance of International & Local Cards</h1>
-                <p className="flex text-lg text-gray-700 font-medium items-center">Maincity Trust Bank ATMs provide Cash Withdrawal and Balance Inquiry services to MasterCard® 
+                <p className="flex text-lg text-gray-700 font-medium items-center">Octillion Whales Bank ATMs provide Cash Withdrawal and Balance Inquiry services to MasterCard® 
                 International (Classic, Gold, Electron and Plus) cardholders, MasterCard (MasterCard, Maestro, Cirrus) and local switch cardholders.</p>
             </div>
             <FootBar/>
