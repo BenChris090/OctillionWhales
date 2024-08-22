@@ -78,7 +78,7 @@ const MakeTransfer = () => {
                     account.userID === Beneficiary.userID ? updatedRecipient : account
                 );
                 
-                setMessage('Transfer successful');
+                setMessage('Transfer Successful');
                 localStorage.setItem('user', JSON.stringify(updatedUser));
                 // Ideally, send updatedAccounts to server to persist changes
 
@@ -104,7 +104,7 @@ const MakeTransfer = () => {
         }
     };
 
-    if (isPending) return <Spinner/>;
+    // if (isPending) return <Spinner/>;
     if (error) return <div>{error}</div>;
 
     return (
@@ -205,6 +205,7 @@ const MakeTransfer = () => {
                             </select>
                         </div>
                     </div>
+                    {message && <div className="flex text-green-700 font-bold">{message} <FaCheck className="mx-2 my-auto"/></div>}
                     <div className="px-2 lg:px-10">
                         <button
                             type="submit"
@@ -214,7 +215,6 @@ const MakeTransfer = () => {
                         </button>
                     </div>
                 </form>
-                {message && <div className="flex text-green-700 font-bold">{message} <FaCheck className="mx-2 my-auto"/></div>}
             </div>
         </Layout>
     );
