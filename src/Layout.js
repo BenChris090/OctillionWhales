@@ -27,7 +27,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
     <div className="flex w-full overflow-y-hidden">
       {/* Mobile Navigation */}
       <div className={`z-0 fixed overflow-y-auto bg-white h-screen w-full shadow-xl ${mNav ? 'block' : 'hidden'}`} id="mNav-options">
-        <div className="flex items-center justify-between w-full p-4 max-h-12">
+        <div className="flex items-center justify-between w-full p-4">
           <Link to="/" className="flex items-center w-full m-auto lg:max-h-16">
             <img src={ICE_LOGO} className="mr-3 h-12" alt="Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">ICE_BERG</span>
