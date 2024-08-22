@@ -5,7 +5,7 @@ import useFetch from './useFetch'; // Custom hook for fetching data
 import Spinner from './Spinner'; // Loading spinner
 import { useUser } from './UserContext'; // Import the useUser hook
 
-import { FaWallet, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaWallet, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 import { BiUser } from 'react-icons/bi';
 import { MdOutlineExitToApp, MdAccountBalance } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
@@ -60,7 +60,8 @@ const AccountSummary = () => {
                                 <p className="flex items-center"><CgProfile className="mr-2 text-xl" /><strong className='mr-2'>Account Number:</strong> {user.accountNumber}</p>
                                 <p className="flex items-center"><MdAccountBalance className="mr-2 text-xl" /><strong className='mr-2'>Account Type:</strong> {user.accountType}</p>
                                 <p className="flex items-center"><FaWallet className="mr-2 text-xl" /><strong className='mr-2'>Account Balance:</strong> {user.currencySign}{user.balance.toLocaleString()}</p>
-                                <p className="flex items-center"><FaCheck className="mr-2 text-xl text-green-600" /><strong className='mr-2'>Status:</strong> {user.accountStatus}</p>
+                                <p className="flex items-center">{user.accountStatus === "Active" ? <FaCheck className="mr-2 text-xl text-green-600" /> : <FaTimes className="mr-2 text-xl text-red-600" />}<strong className='mr-2'>Status:</strong> {user.accountStatus}</p>
+                                
                             </div>
                         </div>
 
@@ -81,7 +82,7 @@ const AccountSummary = () => {
                     <div className="mt-6 text-center">
                         <button
                             onClick={handleLogout}
-                            className="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md flex items-center justify-center mx-auto transition duration-300 hover:bg-red-600"
+                            className="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md flex items-center justify-center mx-auto transition duration-300 hover:bg-red-800"
                         >
                             <MdOutlineExitToApp className="mr-2 text-xl" />
                             Log Out

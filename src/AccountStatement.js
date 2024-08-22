@@ -47,7 +47,7 @@ const AccountStatement = () => {
                         <thead>
                             <tr className="divide-x-2 divide-cyan-900">
                                 <th className="py-2 px-8">Date</th>
-                                <th className="py-2 px-16">Narration</th>
+                                <th className="py-2 px-8">Narration</th>
                                 <th className="py-2 px-8">Reference Code</th>
                                 <th className="py-2 px-8">Debit (Dr)</th>
                                 <th className="py-2 px-8">Credit (Cr)</th>
@@ -63,7 +63,7 @@ const AccountStatement = () => {
                                 transactions.map((transaction, index) => (
                                     <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
                                         <td className="py-2 px-8">{transaction.date}</td>
-                                        <td className="py-2 px-16">{transaction.narration}</td>
+                                        <td className="py-2 px-8">{transaction.narration}</td>
                                         <td className="py-2 px-8">{transaction.referenceCode}</td>
                                         <td className="py-2 px-8">{transaction.debit}</td>
                                         <td className="py-2 px-8">{transaction.credit}</td>
