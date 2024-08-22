@@ -67,15 +67,15 @@ const Dashboard = () => {
                     <section className="flex flex-col lg:flex-row gap-4 mt-6">
                         <div className="bg-white shadow-lg rounded-lg p-6 text-center space-y-4 flex-1">
                             <h1 className="text-3xl font-medium">{user.currencySign}{user.balance.toLocaleString()}</h1>
-                            <p className="text-xl text-cyan-900">Total Balance</p>
+                            <p className="text-xl font-semibold text-cyan-900">Total Balance</p>
                         </div>
                         <div className="bg-white shadow-lg rounded-lg p-6 text-center space-y-4 flex-1">
                             <h1 className="text-3xl font-medium">{user.currencySign}{user.balance.toLocaleString()}</h1>
-                            <p className="text-xl text-green-700">Account Balance</p>
+                            <p className="text-xl font-semibold text-green-700">Account Balance</p>
                         </div>
                         <div className="bg-white shadow-lg rounded-lg p-6 text-center space-y-4 flex-1">
                             <h1 className="text-3xl font-medium">{user.currencySign}0.00</h1>
-                            <p className="text-xl text-red-700">Last Withdrawal</p>
+                            <p className="text-xl font-semibold text-red-700">Last Withdrawal</p>
                         </div>
                     </section>
 
