@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAngleDoubleRight, FaCheck } from 'react-icons/fa';
 import { BiTransferAlt } from 'react-icons/bi';
 import { useUser } from './UserContext'; // Import the useUser hook
 import Layout from './Layout'; // Import the Layout component
@@ -83,7 +83,9 @@ const MakeTransfer = () => {
                 // Ideally, send updatedAccounts to server to persist changes
 
                 setUser(updatedUser);
+                setTimeout (() => {
                 navigate(`/dashboard/${userID}`);
+                }, 3000);
             } else {
                 setErrors(prev => ({ ...prev, beneficiaryAcct: 'Beneficiary not found' }));
             }
@@ -212,7 +214,7 @@ const MakeTransfer = () => {
                         </button>
                     </div>
                 </form>
-                {message && <div className="text-green-700 font-bold">{message}</div>}
+                {message && <div className="flex text-green-700 font-bold">{message} <FaCheck className="mx-2 my-auto"/></div>}
             </div>
         </Layout>
     );
