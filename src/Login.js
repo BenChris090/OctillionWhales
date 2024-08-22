@@ -67,8 +67,8 @@ const Login = () => {
             {isPending && <Spinner />}
             {!isPending && !error && !isLoggedIn && (
                 <form className="mx-auto my-auto p-8 rounded-xl space-y-12 lg:space-y-8 bg-cyan-900 shadow-xl shadow-gray-700 max-w-md lg:max-w-lg">
-                    <div className="px-auto mx-auto place-content-center">
-                        <Link to="/" className="flex items-center w-full mx-auto lg:max-h-16">
+                    <div className="px-auto mx-auto w-full place-content-center">
+                        <Link to="/" className="flex text-center justify-center place-content-center px-auto mx-auto lg:max-h-16">
                             <img src={ICE_LOGO} className="mr-3 h-12" alt="Logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap text-teal-600 lg:text-4xl">ICE_BERG</span>
                         </Link>
