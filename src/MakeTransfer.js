@@ -58,8 +58,8 @@ const MakeTransfer = () => {
         const newErrors = {};
         if (!formData.amount || formData.amount <= 0) newErrors.amount = 'Amount must be greater than zero';
         if (formData.amount > user.balance) newErrors.amount = 'Insufficient balance';
-        if (!accounts.find(account => account.userID === formData.beneficiaryAcct)) newErrors.beneficiaryAcct = 'Recipient ID not found';
-        if (!formData.amount || !formData.beneficiaryName || !formData.beneficiaryAcct || !formData.beneficiaryBank || !formData.narration || !formData.accType) {
+        if (!accounts.find(account => account.accountNumber === formData.beneficiaryAcct)) newErrors.beneficiaryAcct = 'Beneficiary not found';
+        if (!formData.amount || !formData.beneficiaryName || !formData.beneficiaryAcct || !formData.beneficiaryBank || !formData.accType) {
             newErrors.form = 'All fields are required';
         }
         setErrors(newErrors);
