@@ -88,7 +88,7 @@ const Login = () => {
                         }
                         {showPassword ? "Hide Password" : "Show Password"}
                     </p>                    
-                    {newErrors.error && <div className="text-red-700">{error}</div>}
+                    {newErrors.error && <p className="text-red-700 font-bold">{newErrors.error}</p>}
                     <button
                         className="text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg ease-in duration-500 mt-4"
                         onClick={handleLogin}
