@@ -180,7 +180,6 @@ const MakeTransfer = () => {
                                 value={formData.narration}
                                 type="text"
                                 placeholder="Narration/Purpose"
-                                required
                             />
                         </div>
                         <div className="w-full lg:w-1/2 space-y-4">
