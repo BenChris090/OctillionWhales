@@ -71,10 +71,18 @@
       "country": "United Kingdom",
       "city": "London",
       "address": "456 High Street, London, SW1A 1AA",
-      "balance": 2500,
+      "balance": 8500,
       "currencySign": "£",
       "currency": "GBP",
-      "transactions": []
+      "transactions": [{
+        "id": "1",
+        "date": "2024-08-22",
+        "narration": "Transfer from Sarah Johnson",
+        "referenceCode": "TXN124365879",
+        "debit": "",
+        "credit": 6000,
+        "balance": 8500
+      }]
     }
   ]
 }
