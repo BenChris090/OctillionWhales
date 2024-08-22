@@ -155,6 +155,7 @@ const MakeTransfer = () => {
                                 required
                             >
                                 <option value="" disabled>Select Beneficiary Bank</option>
+                                <option value="Octillion Whales Bank">Octillion Whales Bank</option>
                                 <option value="Chase Bank">Chase Bank</option>
                                 <option value="Bank Of America">Bank Of America</option>
                                 {/* Add other options here */}
