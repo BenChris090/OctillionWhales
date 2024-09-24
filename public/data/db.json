@@ -83,6 +83,50 @@
         "credit": 6000,
         "balance": 8500
       }]
+    },
+    {
+      "accountHolderName": "Cote De Pablo",
+      "accountNumber": "98760415",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "userID": "COTEDEPABLO1",
+      "passkey": "CD3PABL@",
+      "pinCode": "WKT0132Q",
+      "email": "c0t3d3pa6l0@gmail.com",
+      "telephoneNo": "+9876543210",
+      "country": "United States Of America",
+      "city": "New York",
+      "address": "26030 Avenue Hall, Box 4, Valencia, California, USA.",
+      "balance": 81000,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [{
+        "id": "1",
+        "date": "2024-08-22",
+        "narration": "Deposit",
+        "referenceCode": "TXN897685346",
+        "debit": "",
+        "credit": 20000,
+        "balance": 48500
+      },
+      {
+        "id": "2",
+        "date": "2024-09-02",
+        "narration": "Deposit",
+        "referenceCode": "TXN853184576",
+        "debit": "",
+        "credit": 50500,
+        "balance": 99000
+      },
+      {
+        "id": "3",
+        "date": "2024-08-22",
+        "narration": "Withrawal",
+        "referenceCode": "TXN862908326",
+        "debit": 18000,
+        "credit": "",
+        "balance": 81000
+      }]
     }
   ]
 }
