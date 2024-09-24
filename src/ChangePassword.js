@@ -83,7 +83,7 @@ const ChangePassword = () => {
                             type="submit"
                             className="flex justify-center text-gray-50 w-full p-4 text-lg border-2 border-teal-600 bg-teal-600 rounded-lg shadow-md hover:bg-teal-700 transition duration-300"
                         >
-                            <b className="flex">CHANGE PASSWORD <FaAngleDoubleRight className="m-2" /></b>
+                            <b className="flex">CHANGE PASSKEY <FaAngleDoubleRight className="mx-2 my-auto" /></b>
                         </button>
                     </div>
                 </form>
