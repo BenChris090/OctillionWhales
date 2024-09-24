@@ -37,6 +37,10 @@ const Dashboard = () => {
 
     const toggleNav = () => setmNav(!mNav);
 
+    const lastWithdrawal = user.transactions
+        .filter((transaction) => transaction.debit !== "")
+        .slice(-1)[0];
+
     const handleLogout = () => {
         const currentUser = JSON.parse(localStorage.getItem('user'));
         if (currentUser && currentUser.accountStatus === 'Active') {
@@ -74,7 +78,7 @@ const Dashboard = () => {
                             <p className="text-xl font-semibold text-green-700">Account Balance</p>
                         </div>
                         <div className="bg-white shadow-lg rounded-lg p-6 text-center space-y-4 flex-1">
-                            <h1 className="text-3xl font-medium">{user.currencySign}0.00</h1>
+                            <h1 className="text-3xl font-medium">{user.currencySign}{lastWithdrawal ? lastWithdrawal.debit.toLocaleString() : 0.00}</h1>
                             <p className="text-xl font-semibold text-red-700">Last Withdrawal</p>
                         </div>
                     </section>
