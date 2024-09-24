@@ -29,7 +29,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
       <div className={`z-0 fixed overflow-y-auto bg-white h-screen w-full shadow-xl ${mNav ? 'block' : 'hidden'}`} id="mNav-options">
         <div className="flex items-center justify-between w-full p-3">
           <Link to="/" className="flex items-center w-full m-auto pl-3 lg:max-h-16">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
+            <span className="self-center PX-2 text-xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
           </Link>
           <FaTimes className="text-2xl m-2 text-cyan-900" onClick={toggleNav} />
         </div>
@@ -57,7 +57,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
       {/* Desktop Navigation */}
       <div className="hidden h-screen lg:block lg:w-1/4 shadow-xl">
         <Link to="/" className="flex items-center w-full mx-auto lg:max-h-16">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
+          <span className="self-center PX-2 text-xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
         </Link>
         <div className="profile bg-black text-md text-white font-medium space-y-2 text-center">
           <div className="profilepic p-2">
