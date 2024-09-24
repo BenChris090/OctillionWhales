@@ -1,6 +1,8 @@
 import Topbar from "./Topbar";
 import Navbar from "./Navbar";
 import FootBar from "./FootBar";
+import Spinner from "./Spinner";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { FaAt, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaHeadset } from 'react-icons/fa';
 import { useUser } from './UserContext'; // Import the useUser hook
