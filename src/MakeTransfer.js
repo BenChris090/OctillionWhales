@@ -114,7 +114,7 @@ const MakeTransfer = () => {
                     <h1 className="text-2xl font-bold lg:text-4xl text-cyan-900 mb-4">
                         <b>Make Transfer:</b>
                     </h1>
-                    <div className="lg:flex space-y-4 lg:space-x-8 px-2 lg:px-10">
+                    <div className="lg:flex space-y-4 lg:space-y-0 lg:space-x-8 px-2 lg:px-10">
                         <div className="w-full lg:w-1/2 space-y-4">
                             <input
                                 className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
