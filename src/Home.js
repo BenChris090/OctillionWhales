@@ -4,11 +4,40 @@ import FootBar from "./FootBar";
 import { NavLink,Link } from "react-router-dom";
 import { FaAt, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
 import { BsApple,BsAndroid2 } from "react-icons/bs"
+import Spinner from "./Spinner";
 
 const Home = () => {
     let HOME_PIC1 = require('./octillionWhales1.jpg');
     let HOME_PIC2 = require('./octillionWhales2.jpg');
     let HOME_PIC3 = require('./octillionWhales3.jpg')
+    const [imagesLoaded, setImagesLoaded] = useState(false); // Track if images are loaded
+
+    // When all images are loaded, set loading state to false
+    useEffect(() => {
+        const img1 = new Image();
+        const img2 = new Image();
+        const img3 = new Image();
+
+        img1.src = HOME_PIC1;
+        img2.src = HOME_PIC2;
+        img3.src = HOME_PIC3;
+
+        const handleImageLoad = () => {
+            if (img1.complete && img2.complete && img3.complete) {
+                setImagesLoaded(true); // All images are loaded
+            }
+        };
+
+        img1.onload = handleImageLoad;
+        img2.onload = handleImageLoad;
+        img3.onload = handleImageLoad;
+    }, [HOME_PIC1, HOME_PIC2, HOME_PIC3]);
+
+    if (!imagesLoaded) {
+        return (
+            <Spinner/>
+        );
+    }
 
     return ( 
         <div className="home h-full bg-white">

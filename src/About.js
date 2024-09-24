@@ -9,6 +9,37 @@ const About = () => {
     let TRAVEL = require("./travel.png");
     let TYPEWRITER = require("./typewriter.png");
     let LOANS = require("./loans.png");
+    const [imagesLoaded, setImagesLoaded] = useState(false); // Track if images are loaded
+
+    // When all images are loaded, set loading state to false
+    useEffect(() => {
+        const img1 = new Image();
+        const img2 = new Image();
+        const img3 = new Image();
+        const img4 = new Image();
+
+        img1.src = ACCOUNTS;
+        img2.src = TRAVEL;
+        img3.src = TYPEWRITER;
+        img4.src = LOANS;
+
+        const handleImageLoad = () => {
+            if (img1.complete && img2.complete && img3.complete && img4.complete) {
+                setImagesLoaded(true); // All images are loaded
+            }
+        };
+
+        img1.onload = handleImageLoad;
+        img2.onload = handleImageLoad;
+        img3.onload = handleImageLoad;
+        img4.onload = handleImageLoad;
+    }, [ACCOUNTS, TRAVEL, TYPEWRITER, LOANS]);
+
+    if (!imagesLoaded) {
+        return (
+            <Spinner/>
+        );
+    }
 
     return ( 
         <div className="about h-full">

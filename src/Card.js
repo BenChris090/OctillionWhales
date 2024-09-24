@@ -9,6 +9,38 @@ const Card = () => {
     let CREDITCRD = require("./credit_card.png");
     let PREPAIDCRD = require("./prepaid_cards.png");
     let WALLET = require("./wallet.png");
+    const [imagesLoaded, setImagesLoaded] = useState(false); // Track if images are loaded
+
+    // When all images are loaded, set loading state to false
+    useEffect(() => {
+        const img1 = new Image();
+        const img2 = new Image();
+        const img3 = new Image();
+        const img4 = new Image();
+
+        img1.src = DEBITCRD;
+        img2.src = CREDITCRD;
+        img3.src = PREPAIDCRD;
+        img4.src = WALLET;
+
+        const handleImageLoad = () => {
+            if (img1.complete && img2.complete && img3.complete && img4.complete) {
+                setImagesLoaded(true); // All images are loaded
+            }
+        };
+
+        img1.onload = handleImageLoad;
+        img2.onload = handleImageLoad;
+        img3.onload = handleImageLoad;
+        img4.onload = handleImageLoad;
+    }, [DEBITCRD, CREDITCRD, PREPAIDCRD, WALLET]);
+
+    if (!imagesLoaded) {
+        return (
+            <Spinner/>
+        );
+    }
+
 
     return ( 
         <div className="card">

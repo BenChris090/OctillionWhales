@@ -9,6 +9,38 @@ const Consumer_Loans = () => {
     let LOANS = require("./loans.png");
     let RATE = require("./rates.png");
     let EASYAPPLY = require("./easy-apply.png");
+    const [imagesLoaded, setImagesLoaded] = useState(false); // Track if images are loaded
+
+    // When all images are loaded, set loading state to false
+    useEffect(() => {
+        const img1 = new Image();
+        const img2 = new Image();
+        const img3 = new Image();
+        const img4 = new Image();
+
+        img1.src = MONEYBAG;
+        img2.src = LOANS;
+        img3.src = RATE;
+        img4.src = EASYAPPLY;
+
+        const handleImageLoad = () => {
+            if (img1.complete && img2.complete && img3.complete && img4.complete) {
+                setImagesLoaded(true); // All images are loaded
+            }
+        };
+
+        img1.onload = handleImageLoad;
+        img2.onload = handleImageLoad;
+        img3.onload = handleImageLoad;
+        img4.onload = handleImageLoad;
+    }, [MONEYBAG, LOANS, RATE, EASYAPPLY]);
+
+    if (!imagesLoaded) {
+        return (
+            <Spinner/>
+        );
+    }
+
 
     return ( 
         <div className="consumer-loans ">
