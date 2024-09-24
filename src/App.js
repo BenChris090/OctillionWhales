@@ -40,7 +40,7 @@ function App() {
                             <Route path='/transfer/:userID' element={<ProtectedRoute element={MakeTransfer} />} />
                             <Route path='/account-summary/:userID' element={<ProtectedRoute element={AccountSummary} />} />
                             <Route path='/account-statement/:userID' element={<ProtectedRoute element={AccountStatement} />} />
-                            <Route path='/change-password/:userID' element={<ProtectedRoute element={ChangePassword} />} />
+                            <Route path='/change-passkey/:userID' element={<ProtectedRoute element={ChangePassword} />} />
                             <Route path='/loan-application/:userID' element={<ProtectedRoute element={LoanApplication} />} />
                             <Route path='/customer-care/:userID' element={<ProtectedRoute element={CustomerCare} />} />
 
