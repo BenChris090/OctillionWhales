@@ -32,12 +32,12 @@ const ChangePassword = () => {
     };
 
     return (
-        <Layout pageTitle="Change Password" pageIcon={FaLock}>
+        <Layout pageTitle="Change Passkey" pageIcon={FaLock}>
 
             <div className="bg-gradient-to-r from-teal-500 to-cyan-500 py-8 lg:py-14 p-4 space-y-4 text-center h-screen lg:h-full w-full">
                 <form onSubmit={handleChangePassword} className="my-auto p-4 lg:p-8 rounded-xl space-y-6 bg-white shadow-xl shadow-gray-700">
                     <h1 className="text-2xl font-bold lg:text-4xl text-cyan-900 mb-4">
-                        <b>Change Your Password:</b>
+                        <b>Change Your Passkey:</b>
                     </h1>
                     <div className="space-y-4 px-2 lg:px-10">
                         <input
@@ -46,7 +46,7 @@ const ChangePassword = () => {
                             name="current-password"
                             value={currentPassword}
                             onChange={(e) => setCurrentPassword(e.target.value)}
-                            placeholder="Current Password"
+                            placeholder="Current Passkey"
                             className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
                             required
                         />
@@ -56,7 +56,7 @@ const ChangePassword = () => {
                             name="new-password"
                             value={newPassword}
                             onChange={(e) => setNewPassword(e.target.value)}
-                            placeholder="New Password"
+                            placeholder="New Passkey"
                             className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
                             required
                         />
@@ -66,7 +66,7 @@ const ChangePassword = () => {
                             name="confirm-password"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
-                            placeholder="Confirm New Password"
+                            placeholder="Confirm New Passkey"
                             className="w-full text-black p-4 border-2 border-teal-600 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
                             required
                         />
