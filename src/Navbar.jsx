@@ -42,7 +42,7 @@ const Navbar = () => {
                 <NavLink to="/about" style={({ isActive }) => (isActive ? {color: '#06b6d4'} : {color: '#2F4F4F'})}  className="mt-10 text-center space-y-2 block text-xl">About Us</NavLink>
             </div>
             {/* mobile nav ends here */}
-            <Link to="/" className="flex items-center"><span className="self-center text-3xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span></Link>
+            <Link to="/" className="flex pl-2 items-center"><span className="self-center text-3xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span></Link>
             <div className="bars space-x-2 flex items-center ml-auto">
                 <FaBars className="text-2xl flex text-cyan-900 my-2 lg:hidden" onClick={setNav}/>
             </div>

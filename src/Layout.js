@@ -28,7 +28,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
       {/* Mobile Navigation */}
       <div className={`z-0 fixed overflow-y-auto bg-white h-screen w-full shadow-xl ${mNav ? 'block' : 'hidden'}`} id="mNav-options">
         <div className="flex items-center justify-between w-full p-3">
-          <Link to="/" className="flex items-center w-full m-auto lg:max-h-16">
+          <Link to="/" className="flex items-center w-full m-auto pl-3 lg:max-h-16">
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
           </Link>
           <FaTimes className="text-2xl m-2 text-cyan-900" onClick={toggleNav} />
