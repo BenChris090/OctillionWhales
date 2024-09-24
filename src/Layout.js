@@ -57,8 +57,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
       {/* Desktop Navigation */}
       <div className="hidden h-screen lg:block lg:w-1/4 shadow-xl">
         <Link to="/" className="flex items-center w-full mx-auto lg:max-h-16">
-          <img src={ICE_LOGO} className="mr-3 h-12" alt="Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">ICE_BERG</span>
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
         </Link>
         <div className="profile bg-black text-md text-white font-medium space-y-2 text-center">
           <div className="profilepic p-2">
