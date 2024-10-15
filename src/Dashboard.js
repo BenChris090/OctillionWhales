@@ -57,18 +57,18 @@ const Dashboard = () => {
 
     return (
         <Layout pageTitle="Dashboard" pageIcon={CgProfile}>
-            <div className="bg-gray-100 min-h-screen lg:min-h-full w-full">
+            <div className="bg-gray-100 h-screen w-full">
                 {/* Main Content */}
                 <main className="px-6 lg:px-8 py-4">
-                    <section className="space-y-4">
+                    <div className="space-y-4">
                         <h1 className="text-2xl lg:text-3xl font-medium">Welcome, {user.accountHolderName}</h1>
                         <hr className="border-gray-300" />
                         <h2 className="text-lg lg:text-xl font-medium">Account Type: {user.accountType}</h2>
                         
-                    </section><h2 className="flex items-center text-lg lg:text-xl font-medium">Account Status: {user.accountStatus} {user.accountStatus === "Active" ? <FaCheck className="ml-2 text-green-700"/> : <FaTimes className="ml-2 text-red-700"/>}</h2>
+                    </div><h2 className="flex items-center text-lg lg:text-xl font-medium">Account Status: {user.accountStatus} {user.accountStatus === "Active" ? <FaCheck className="ml-2 text-green-700"/> : <FaTimes className="ml-2 text-red-700"/>}</h2>
 
                     {/* Summary Cards */}
-                    <section className="flex flex-col lg:flex-row gap-4 mt-6">
+                    <div className="flex flex-col lg:flex-row gap-4 mt-6">
                         <div className="bg-white shadow-lg rounded-lg p-6 text-center space-y-4 flex-1">
                             <h1 className="text-3xl font-medium">{user.currencySign}{user.balance.toLocaleString()}</h1>
                             <p className="text-xl font-semibold text-cyan-900">Total Balance</p>
@@ -81,13 +81,13 @@ const Dashboard = () => {
                             <h1 className="text-3xl font-medium">{user.currencySign}{lastWithdrawal ? lastWithdrawal.debit.toLocaleString() : 0.00}</h1>
                             <p className="text-xl font-semibold text-red-700">Last Withdrawal</p>
                         </div>
-                    </section>
+                    </div>
 
                     {/* Recent Transactions Table */}
-                    <section className="mt-6">
+                    <div className="mt-6 h-full">
                         <h1 className="text-3xl font-medium">Recent Transactions</h1>
-                        <div className="overflow-x-auto overflow-y-auto">
-                            <table className="w-full max-h-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center mt-4">
+                        <div className="flex overflow-x-auto overflow-y-scroll">
+                            <table className="min-w-full min-h-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center mt-4">
                                 <caption className="caption-bottom p-2">Transaction Records</caption>
                                 <thead>
                                     <tr className="divide-x-2 divide-cyan-900">
@@ -113,7 +113,7 @@ const Dashboard = () => {
                                 </tbody>
                             </table>
                         </div>
-                    </section>
+                    </div>
                 </main>
             </div>
         </Layout>

@@ -5,6 +5,7 @@
       "accountNumber": "8020723256",
       "accountStatus": "Active",
       "accountType": "Current Account",
+      "profilePic": "Cote De Pablo.jpg",
       "userID": "Dajdenson27683",
       "passkey": "****** (Reset Passkey)",
       "pinCode": "MCTBGB2L",
@@ -30,6 +31,7 @@
       "accountNumber": "6543210870",
       "accountStatus": "Active",
       "accountType": "Savings Account",
+      "profilePic": "Cote De Pablo.jpg",
       "userID": "SJohnson1234",
       "passkey": "****** (Reset Passkey)",
       "pinCode": "PKR9876X",
@@ -63,6 +65,7 @@
       "accountNumber": "9876543342",
       "accountStatus": "Active",
       "accountType": "Checking Account",
+      "profilePic": "Cote De Pablo.jpg",
       "userID": "RSmith5678",
       "passkey": "****** (Reset Passkey)",
       "pinCode": "WXY1234Z",
@@ -89,6 +92,7 @@
       "accountNumber": "9876041567",
       "accountStatus": "Active",
       "accountType": "Checking Account",
+      "profilePic": "Cote_De_Pablo.jpg",
       "userID": "COTEDEPABLO1",
       "passkey": "CD3PABL@",
       "pinCode": "WKT0132Q",
@@ -97,36 +101,119 @@
       "country": "United States Of America",
       "city": "California",
       "address": "26030 Avenue Hall, Box 4, Valencia, California, USA.",
-      "balance": 81000,
+      "balance": 2250000,
       "currencySign": "$",
       "currency": "USD",
-      "transactions": [{
-        "id": "1",
-        "date": "2024-08-22",
-        "narration": "Deposit",
-        "referenceCode": "TXN897685346",
-        "debit": "",
-        "credit": 20000,
-        "balance": 48500
-      },
-      {
-        "id": "2",
-        "date": "2024-09-02",
-        "narration": "Deposit",
-        "referenceCode": "TXN853184576",
-        "debit": "",
-        "credit": 50500,
-        "balance": 99000
-      },
-      {
-        "id": "3",
-        "date": "2024-08-22",
-        "narration": "Withrawal",
-        "referenceCode": "TXN862908326",
-        "debit": 18000,
-        "credit": "",
-        "balance": 81000
-      }]
-    }
-  ]
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2023-08-22",
+          "narration": "Deposit",
+          "referenceCode": "TXN897685346",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1950000
+        },
+        {
+          "id": "2",
+          "date": "2023-09-02",
+          "narration": "Deposit",
+          "referenceCode": "TXN853184576",
+          "debit": "",
+          "credit": 100000,
+          "balance": 2050000
+        },
+        {
+          "id": "3",
+          "date": "2023-09-15",
+          "narration": "Withrawal",
+          "referenceCode": "TXN862908326",
+          "debit": 50000,
+          "credit": "",
+          "balance": 2000000
+        },
+        {
+          "id": "4",
+          "date": "2023-09-25",
+          "narration": "Deposit",
+          "referenceCode": "TXN765432109",
+          "debit": "",
+          "credit": 75000,
+          "balance": 2075000
+        },
+        {
+          "id": "5",
+          "date": "2023-09-28",
+          "narration": "Withrawal",
+          "referenceCode": "TXN564738291",
+          "debit": 25000,
+          "credit": "",
+          "balance": 2050000
+        },
+        {
+          "id": "6",
+          "date": "2023-10-05",
+          "narration": "Deposit",
+          "referenceCode": "TXN987654321",
+          "debit": "",
+          "credit": 50000,
+          "balance": 2100000
+        },
+        {
+          "id": "7",
+          "date": "2023-10-07",
+          "narration": "Withrawal",
+          "referenceCode": "TXN675849302",
+          "debit": 100000,
+          "credit": "",
+          "balance": 2000000
+        },
+        {
+          "id": "8",
+          "date": "2023-10-10",
+          "narration": "Deposit",
+          "referenceCode": "TXN453278909",
+          "debit": "",
+          "credit": 150000,
+          "balance": 2150000
+        },
+        {
+          "id": "9",
+          "date": "2023-10-13",
+          "narration": "Withrawal",
+          "referenceCode": "TXN284576903",
+          "debit": 100000,
+          "credit": "",
+          "balance": 2050000
+        },
+        {
+          "id": "10",
+          "date": "2023-10-20",
+          "narration": "Deposit",
+          "referenceCode": "TXN342678940",
+          "debit": "",
+          "credit": 263500,
+          "balance": 2313500
+        },
+        {
+          "id": "11",
+          "date": "2024-01-15",
+          "narration": "Withrawal",
+          "referenceCode": "TXN123456789",
+          "debit": 50000,
+          "credit": "",
+          "balance": 2263500
+        },
+        {
+          "id": "12",
+          "date": "2024-10-07",
+          "narration": "Withrawal",
+          "referenceCode": "TXN001122334",
+          "debit": 13500,
+          "credit": "",
+          "balance": 2250000
+        }
+      ]
+}
+]
 }

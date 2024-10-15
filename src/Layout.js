@@ -4,13 +4,14 @@ import { BiTransferAlt, BiUser } from 'react-icons/bi';
 import { IoIosPaper } from 'react-icons/io';
 import { MdOutlineExitToApp } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
-import ICE_LOGO from './ICE_LOGO.png'; // Importing image
+import Cote_De_Pablo from "./Cote_De_Pablo.jpg"; // Importing image
 import { useState } from 'react';
 import { useUser } from './UserContext'; // Import the useUser hook
 
 const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
   const { user, setUser } = useUser();
   const [mNav, setmNav] = useState(false);
+  
 
   const toggleNav = () => setmNav(!mNav);
 
@@ -24,19 +25,19 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
   };
 
   return (
-    <div className="flex w-full overflow-y-hidden">
+    <div className="flex w-full h-screen overflow-y-hidden">
       {/* Mobile Navigation */}
-      <div className={`z-0 fixed overflow-y-auto bg-white h-screen w-full shadow-xl ${mNav ? 'block' : 'hidden'}`} id="mNav-options">
+      <div className={`z-0 fixed  bg-white h-screen w-full shadow-xl ${mNav ? 'block' : 'hidden'}`} id="mNav-options">
         <div className="flex items-center justify-around w-full p-3 py-4">
           <Link to="/" className="flex items-center w-full m-auto lg:max-h-16">
-            <span className="self-center PX-2 text-xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
+            <span className="self-center px-2 text-xl font-semibold whitespace-nowrap text-cyan-900 lg:text-4xl">OCTILLION WHALES</span>
           </Link>
           <FaTimes className="text-2xl m-2 text-cyan-900" onClick={toggleNav} />
         </div>
 
         <div className="profile py-4 lg:py-0 bg-black text-md text-white font-medium space-y-2 text-center">
           <div className="profilepic p-4">
-            <img src={ICE_LOGO} alt="profile_pic" className="h-28 border-4 border-cyan-900 m-auto rounded-full" />
+            <img src={Cote_De_Pablo} alt="profile_pic" className="h-28 border-4 border-cyan-900 m-auto rounded-full" />
           </div>
           <h2>USERID</h2>
           <p>{user.userID}</p>
@@ -55,15 +56,15 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden h-screen lg:block lg:w-1/4 shadow-xl">
+      <div className="hidden h-screen overflow-y-hidden lg:block lg:w-1/4 shadow-xl">
         <Link to="/" className="flex items-center w-full mx-auto py-2 lg:max-h-16">
-          <span className="self-center PX-2 mx-auto text-xl font-semibold whitespace-nowrap text-cyan-900 lg:text-3xl">OCTILLION WHALES</span>
+          <span className="self-center PX-2 mx-auto font-semibold whitespace-nowrap text-cyan-900 text-3xl">OCTILLION WHALES</span>
         </Link>
         <div className="profile bg-black text-md text-white font-medium space-y-2 text-center">
           <div className="profilepic p-2">
-            <img src={ICE_LOGO} alt="profile_pic" className="h-28 border-4 border-cyan-900 m-auto rounded-full" />
+            <img src={Cote_De_Pablo} alt="profile_pic" className="h-28 w-28 border-4 border-cyan-900 m-auto rounded-full" />
           </div>
-          <h2>USERID</h2>
+          <h2>USERID</h2> 
           <p>{user.userID}</p>
         </div>
         <div className="nav text-lg text-cyan-900 font-medium">
