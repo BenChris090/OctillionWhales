@@ -99,8 +99,8 @@ const Dashboard = () => {
                                         <th className="py-2 px-4 w-1/6">Balance</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    {user.transactions.map((transaction) => (
+                                <tbody> 
+                                    {user.transactions.slice().reverse().map((transaction) => ( // Reverses the array by id without mutating the original array
                                             <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
                                                 <td className="py-2 px-4">{transaction.date}</td>
                                                 <td className="py-2 px-4 w-1/2">{transaction.narration}</td>

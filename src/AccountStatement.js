@@ -60,7 +60,7 @@ const AccountStatement = () => {
                                     <td colSpan="6" className="py-2 px-8">No transactions available</td>
                                 </tr>
                             ) : (
-                                transactions.map((transaction, index) => (
+                                transactions.slice().reverse().map((transaction) => ( // Reverses the array by id without mutating the original array
                                     <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
                                         <td className="py-2 px-8">{transaction.date}</td>
                                         <td className="py-2 px-8">{transaction.narration}</td>
