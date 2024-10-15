@@ -57,7 +57,7 @@ const Dashboard = () => {
 
     return (
         <Layout pageTitle="Dashboard" pageIcon={CgProfile}>
-            <div className="bg-gray-100 h-screen w-full">
+            <div className="bg-gray-100 h-screen overflow-y-hidden w-full">
                 {/* Main Content */}
                 <main className="px-6 lg:px-8 py-4">
                     <div className="space-y-4">
@@ -84,9 +84,9 @@ const Dashboard = () => {
                     </div>
 
                     {/* Recent Transactions Table */}
-                    <div className="mt-6 h-full">
+                    <div className="mt-6 max-h-full">
                         <h1 className="text-3xl font-medium">Recent Transactions</h1>
-                        <div className="flex overflow-x-auto overflow-y-scroll">
+                        <div className="flex overflow-x-auto overflow-y-auto">
                             <table className="min-w-full min-h-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center mt-4">
                                 <caption className="caption-bottom p-2">Transaction Records</caption>
                                 <thead>
