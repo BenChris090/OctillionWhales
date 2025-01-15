@@ -5,7 +5,7 @@ import { IoIosPaper } from 'react-icons/io';
 import { MdOutlineExitToApp } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import Cote_De_Pablo from "./Cote_De_Pablo.jpg"; // Importing image
-import Joshua_E_Bryan from "./Joshua_E_ Bryan.jpg";
+import Joshua_E_Bryan from "./Joshua_E_Bryan.jpg";
 import { useState } from 'react';
 import { useUser } from './UserContext'; // Import the useUser hook
 
