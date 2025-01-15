@@ -5,6 +5,7 @@ import { IoIosPaper } from 'react-icons/io';
 import { MdOutlineExitToApp } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import Cote_De_Pablo from "./Cote_De_Pablo.jpg"; // Importing image
+import Joshua_E_Bryan from "./Joshua_E_ Bryan.jpg";
 import { useState } from 'react';
 import { useUser } from './UserContext'; // Import the useUser hook
 
@@ -62,7 +63,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
         </Link>
         <div className="profile bg-black text-md text-white font-medium space-y-2 text-center">
           <div className="profilepic p-2">
-            <img src={Cote_De_Pablo} alt="profile_pic" className="h-28 w-28 border-4 border-cyan-900 m-auto rounded-full" />
+            <img src={Joshua_E_Bryan} alt="profile_pic" className="h-28 w-28 border-4 border-cyan-900 m-auto rounded-full" />
           </div>
           <h2>USERID</h2> 
           <p>{user.userID}</p>

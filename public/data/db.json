@@ -214,6 +214,109 @@
           "balance": 2250000
         }
       ]
-}
+    },
+    {
+      "accountHolderName": "Joshua E Bryan",
+      "accountNumber": "9876041578",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "profilePic": "Joshua_E_Bryan.jpg",
+      "userID": "JOSHEBRYAN1",
+      "passkey": "J0SHBRY@N",
+      "pinCode": "WKT0247J",
+      "email": "joshua.bryan1987@gmail.com",
+      "telephoneNo": "+19294307807",
+      "country": "United States Of America",
+      "city": "New York",
+      "address": "125 Main Street, Box 12, Brooklyn, New York, USA.",
+      "balance": 1500000,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2023-08-15",
+          "narration": "Deposit",
+          "referenceCode": "TXN145236487",
+          "debit": "",
+          "credit": 25000,
+          "balance": 1250000
+        },
+        {
+          "id": "2",
+          "date": "2023-08-30",
+          "narration": "Deposit",
+          "referenceCode": "TXN756823489",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1300000
+        },
+        {
+          "id": "3",
+          "date": "2023-09-10",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN983745670",
+          "debit": 20000,
+          "credit": "",
+          "balance": 1280000
+        },
+        {
+          "id": "4",
+          "date": "2023-09-22",
+          "narration": "Deposit",
+          "referenceCode": "TXN348567290",
+          "debit": "",
+          "credit": 100000,
+          "balance": 1380000
+        },
+        {
+          "id": "5",
+          "date": "2023-10-01",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN678459321",
+          "debit": 50000,
+          "credit": "",
+          "balance": 1330000
+        },
+        {
+          "id": "6",
+          "date": "2023-10-15",
+          "narration": "Deposit",
+          "referenceCode": "TXN890123457",
+          "debit": "",
+          "credit": 75000,
+          "balance": 1405000
+        },
+        {
+          "id": "7",
+          "date": "2023-11-01",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN349876230",
+          "debit": 50000,
+          "credit": "",
+          "balance": 1355000
+        },
+        {
+          "id": "8",
+          "date": "2023-11-20",
+          "narration": "Deposit",
+          "referenceCode": "TXN123456788",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1405000
+        },
+        {
+          "id": "9",
+          "date": "2023-12-05",
+          "narration": "Deposit",
+          "referenceCode": "TXN234567891",
+          "debit": "",
+          "credit": 95000,
+          "balance": 1500000
+        }
+      ]
+    }
+    
+
 ]
 }

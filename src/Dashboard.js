@@ -18,12 +18,16 @@ const Dashboard = () => {
     const { data, error, isPending } = useFetch('/data/db.json');
     const { user, setUser } = useUser();
     const [mNav, setmNav] = useState(false);
+    const [transactions, setTransactions] = useState([]);
+
+
 
     useEffect(() => {
         if (data && data.accounts) {
             const foundUser = data.accounts.find((account) => account.userID === userID);
             if (foundUser) {
                 setUser(foundUser);
+                setTransactions(foundUser.transactions || []);
                 localStorage.setItem('user', JSON.stringify(foundUser));
             }
         }
@@ -100,16 +104,21 @@ const Dashboard = () => {
                                     </tr>
                                 </thead>
                                 <tbody> 
-                                    {user.transactions.slice().reverse().map((transaction) => ( // Reverses the array by id without mutating the original array
-                                            <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
-                                                <td className="py-2 px-4">{transaction.date}</td>
-                                                <td className="py-2 px-4 w-1/2">{transaction.narration}</td>
-                                                <td className="py-2 px-4">{transaction.referenceCode}</td>
-                                                <td className="py-2 px-4">{transaction.debit}</td>
-                                                <td className="py-2 px-4">{transaction.credit}</td>
-                                                <td className="py-2 px-4">{transaction.balance}</td>
-                                            </tr>
-                                        ))}
+                                {transactions.length === 0 ? (
+                                    <tr>
+                                        <td colSpan="6" className="py-2 px-8">No transactions available</td>
+                                    </tr>
+                                ) : (
+                                    transactions.slice().reverse().map((transaction) => ( // Reverses the array by id without mutating the original array
+                                    <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
+                                        <td className="py-2 px-4">{transaction.date}</td>
+                                        <td className="py-2 px-4 w-1/2">{transaction.narration}</td>
+                                        <td className="py-2 px-4">{transaction.referenceCode}</td>
+                                        <td className="py-2 px-4">{transaction.debit}</td>
+                                        <td className="py-2 px-4">{transaction.credit}</td>
+                                        <td className="py-2 px-4">{transaction.balance}</td>
+                                    </tr>
+                                )))}
                                 </tbody>
                             </table>
                         </div>
