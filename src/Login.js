@@ -68,8 +68,8 @@ const Login = () => {
             {!isPending && !error && !isLoggedIn && (
                 <form className="mx-auto my-auto p-8 rounded-xl space-y-12 lg:space-y-8 bg-cyan-900 shadow-xl shadow-gray-700 max-w-md lg:max-w-lg">
                     <div className="px-auto mx-auto w-full place-content-center">
-                        <Link to="/" className="flex text-center justify-center place-content-center px-auto mx-auto lg:max-h-16">
-                            <H1 className="text-3xl">OCTILLION WHALES</H1>
+                        <Link to="/" className="flex text-center text-3xl justify-center place-content-center px-auto mx-auto lg:max-h-16">
+                            OCTILLION WHALES
                         </Link>
                     </div>
                     <h1 className="text-4xl text-white"><b>LOGIN:</b></h1>
