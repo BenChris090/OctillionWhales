@@ -229,7 +229,7 @@
       "country": "United States Of America",
       "city": "New York",
       "address": "125 Main Street, Box 12, Brooklyn, New York, USA.",
-      "balance": 1500000,
+      "balance": 1817390.88,
       "currencySign": "$",
       "currency": "USD",
       "transactions": [
@@ -313,6 +313,24 @@
           "debit": "",
           "credit": 95000,
           "balance": 1500000
+        },
+        {
+          "id": "10",
+          "date": "2024-08-07",
+          "narration": "Credit",
+          "referenceCode": "TXN238476891",
+          "debit": "",
+          "credit": 323590.88,
+          "balance": 1823590.88
+        },
+        {
+          "id": "10",
+          "date": "2024-08-07",
+          "narration": "Credit",
+          "referenceCode": "TXN238476891",
+          "debit": 6200,
+          "credit": "",
+          "balance": 1817390.88
         }
       ]
     },
