@@ -326,7 +326,7 @@
         {
           "id": "10",
           "date": "2024-08-07",
-          "narration": "Credit",
+          "narration": "Debit",
           "referenceCode": "TXN238476891",
           "debit": 6200,
           "credit": "",
