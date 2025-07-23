@@ -7,6 +7,7 @@ import { CgProfile } from 'react-icons/cg';
 import Cote_De_Pablo from "./Cote_De_Pablo.jpg"; // Importing image
 import Joshua_E_Bryan from "./Joshua_E_Bryan.jpg";
 import JASON_HARRINGTON from "./jason_harrington.jpg"
+import AMBER_MARSHALL from "./Amber_Marshall.jpg"
 import { useState } from 'react';
 import { useUser } from './UserContext'; // Import the useUser hook
 
@@ -17,7 +18,8 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
   const imgs = {
     "Cote De Pablo": Cote_De_Pablo,
     "Joshua E Bryan": Joshua_E_Bryan,
-    "Jason Harrington": JASON_HARRINGTON
+    "Jason Harrington": JASON_HARRINGTON,
+    "Amber Marshall": AMBER_MARSHALL
   }
   
 

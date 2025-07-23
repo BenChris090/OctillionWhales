@@ -434,7 +434,118 @@
           "balance": 2500000
         }
       ]
+    },
+    {
+      "accountHolderName": "Amber Marshall",
+      "accountNumber": "9032178456",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "profilePic": "Amber_Marshall.jpg",
+      "userID": "AMBERM1",
+      "passkey": "AMB3R!MARSH",
+      "pinCode": "AMR5274L",
+      "email": "amber.marshall@mail.com",
+      "telephoneNo": "+19294301234",
+      "country": "United States Of America",
+      "city": "Los Angeles",
+      "address": "456 Sunset Boulevard, Los Angeles, California, USA.",
+      "balance": 1950000,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2025-06-05",
+          "narration": "Deposit",
+          "referenceCode": "TXN761239847",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1800000
+        },
+        {
+          "id": "2",
+          "date": "2025-06-12",
+          "narration": "Deposit",
+          "referenceCode": "TXN871234569",
+          "debit": "",
+          "credit": 30000,
+          "balance": 1830000
+        },
+        {
+          "id": "3",
+          "date": "2025-06-17",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN983472610",
+          "debit": 25000,
+          "credit": "",
+          "balance": 1805000
+        },
+        {
+          "id": "4",
+          "date": "2025-06-21",
+          "narration": "Deposit",
+          "referenceCode": "TXN562839104",
+          "debit": "",
+          "credit": 45000,
+          "balance": 1850000
+        },
+        {
+          "id": "5",
+          "date": "2025-06-28",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN648273910",
+          "debit": 30000,
+          "credit": "",
+          "balance": 1820000
+        },
+        {
+          "id": "6",
+          "date": "2025-07-04",
+          "narration": "Deposit",
+          "referenceCode": "TXN759283640",
+          "debit": "",
+          "credit": 40000,
+          "balance": 1860000
+        },
+        {
+          "id": "7",
+          "date": "2025-07-10",
+          "narration": "Deposit",
+          "referenceCode": "TXN852739104",
+          "debit": "",
+          "credit": 35000,
+          "balance": 1895000
+        },
+        {
+          "id": "8",
+          "date": "2025-07-16",
+          "narration": "Deposit",
+          "referenceCode": "TXN902834756",
+          "debit": "",
+          "credit": 60000,
+          "balance": 1955000
+        },
+        {
+          "id": "9",
+          "date": "2025-07-20",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN739201845",
+          "debit": 25000,
+          "credit": "",
+          "balance": 1930000
+        },
+        {
+          "id": "10",
+          "date": "2025-07-22",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN628304975",
+          "debit": 30000,
+          "credit": "",
+          "balance": 1900000
+        }
+      ]
     }
+
 
 ]
 }
