@@ -444,12 +444,12 @@
       "userID": "AMBERM1",
       "passkey": "AMB3R!MARSH",
       "pinCode": "AMR5274L",
-      "email": "amber.marshall@mail.com",
+      "email": "ambermarshall@mail.com",
       "telephoneNo": "+19294301234",
       "country": "United States Of America",
       "city": "Los Angeles",
       "address": "456 Sunset Boulevard, Los Angeles, California, USA.",
-      "balance": 1950000,
+      "balance": 1900575.28,
       "currencySign": "$",
       "currency": "USD",
       "transactions": [
@@ -487,7 +487,7 @@
           "referenceCode": "TXN562839104",
           "debit": "",
           "credit": 45000,
-          "balance": 1850880.80
+          "balance": 1850880.85
         },
         {
           "id": "5",
@@ -496,7 +496,7 @@
           "referenceCode": "TXN648273910",
           "debit": 30000,
           "credit": "",
-          "balance": 1820880.80
+          "balance": 1820880.85
         },
         {
           "id": "6",
@@ -505,7 +505,7 @@
           "referenceCode": "TXN759283640",
           "debit": "",
           "credit": 40000,
-          "balance": 1860880.80
+          "balance": 1860880.85
         },
         {
           "id": "7",
@@ -514,7 +514,7 @@
           "referenceCode": "TXN852739104",
           "debit": "",
           "credit": 35000,
-          "balance": 1895875.90
+          "balance": 1895875.96
         },
         {
           "id": "8",
@@ -523,7 +523,7 @@
           "referenceCode": "TXN902834756",
           "debit": "",
           "credit": 60000,
-          "balance": 1955875.90
+          "balance": 1955875.94
         },
         {
           "id": "9",
@@ -532,7 +532,7 @@
           "referenceCode": "TXN739201845",
           "debit": 25000,
           "credit": "",
-          "balance": 1930875.90
+          "balance": 1930875.94
         },
         {
           "id": "10",
@@ -541,7 +541,7 @@
           "referenceCode": "TXN628304975",
           "debit": 30000,
           "credit": "",
-          "balance": 1900575.20
+          "balance": 1900575.28
         }
       ]
     }
