@@ -88,7 +88,7 @@ const Dashboard = () => {
                     </div>
 
                     {/* Recent Transactions Table */}
-                    <div className="mt-6 max-h-full">
+                    <div className="mt-6 max-h-full hidden lg:block">
                         <h1 className="text-3xl font-medium">Recent Transactions</h1>
                         <div className="flex overflow-x-auto overflow-y-auto">
                             <table className="min-w-full min-h-full text-sm bg-cyan-900 bg-opacity-25 border-2 border-cyan-900 table-auto divide-y-2 divide-x-2 divide-cyan-900 text-center mt-4">
@@ -103,7 +103,7 @@ const Dashboard = () => {
                                         <th className="py-2 px-4 w-1/6">Balance</th>
                                     </tr>
                                 </thead>
-                                <tbody className="overflow-y-auto overflow-x-auto divide-y-2 divide-cyan-900    "> 
+                                <tbody className="overflow-y-auto overflow-x-auto divide-y-2 divide-cyan-900"> 
                                 {transactions.length === 0 ? (
                                     <tr>
                                         <td colSpan="6" className="py-2 px-8">No transactions available</td>
