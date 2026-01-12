@@ -616,7 +616,7 @@
         {
           "id": "6",
           "date": "2026-01-11",
-          "narration": "Pending",
+          "narration": "Credit Transaction",
           "referenceCode": "TXN11012026A",
           "debit": "",
           "credit": 3000,
@@ -626,7 +626,7 @@
         {
           "id": "7",
           "date": "2026-01-11",
-          "narration": "Pending",
+          "narration": "Credit Transaction",
           "referenceCode": "TXN11012026B",
           "debit": "",
           "credit": 2000,
@@ -636,7 +636,7 @@
         {
           "id": "8",
           "date": "2026-01-11",
-          "narration": "Cancelled",
+          "narration": "Credit Transaction",
           "referenceCode": "TXN11012026C",
           "debit": "",
           "credit": 1500,
