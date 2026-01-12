@@ -21,7 +21,7 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
     "Joshua E Bryan": Joshua_E_Bryan,
     "Jason Harrington": JASON_HARRINGTON,
     "Amber Marshall": AMBER_MARSHALL,
-    "Kevin M Hunt": KEVIN_M_HUNT
+    "Kevin M. Hunt": KEVIN_M_HUNT
   }
   
 
