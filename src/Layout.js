@@ -9,6 +9,7 @@ import Joshua_E_Bryan from "./Joshua_E_Bryan.jpg";
 import JASON_HARRINGTON from "./jason_harrington.jpg"
 import AMBER_MARSHALL from "./Amber_Marshall.jpg"
 import KEVIN_M_HUNT from "./Kevin_M_Hunt.jpeg"
+import AARON_D_JOHNSON from "./Aaron_D_Johnson.jpeg"
 import { useState } from 'react';
 import { useUser } from './UserContext'; // Import the useUser hook
 
@@ -21,7 +22,8 @@ const Layout = ({ children, pageTitle, pageIcon: PageIcon }) => {
     "Joshua E Bryan": Joshua_E_Bryan,
     "Jason Harrington": JASON_HARRINGTON,
     "Amber Marshall": AMBER_MARSHALL,
-    "Kevin M. Hunt": KEVIN_M_HUNT
+    "Kevin M. Hunt": KEVIN_M_HUNT,
+    "Aaron D. Johnson" : AARON_D_JOHNSON,
   }
   
 

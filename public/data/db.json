@@ -644,9 +644,97 @@
           "balance": 5699678.09
         }
       ]
+    },
+    {
+      "accountHolderName": "Aaron D. Johnson",
+      "accountNumber": "9145638821",
+      "accountStatus": "Active",
+      "accountType": "Current Account",
+      "profilePic": "Aaron D Johnson.jpeg",
+      "userID": "AaronJ9",
+      "passkey": "Ajohnson77$",
+      "pinCode": "USCTAJ9X",
+      "email": "aaronjohnson@mail.com",
+      "telephoneNo": "+14125590188",
+      "country": "United States",
+      "city": "New York",
+      "address": "245 Madison Avenue, New York, NY 10016",
+      "balance": 2699678.09,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2025-11-02",
+          "narration": "Cable and electric bills",
+          "referenceCode": "TXN02112025",
+          "debit": 1000,
+          "credit": "",
+          "status": "Success",
+          "balance": 2601878.09
+        },
+        {
+          "id": "2",
+          "date": "2025-11-11",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN11112025",
+          "debit": "",
+          "credit": 30000,
+          "status": "Success",
+          "balance": 2631878.09
+        },
+        {
+          "id": "3",
+          "date": "2025-12-02",
+          "narration": "Cable and electric bills",
+          "referenceCode": "TXN02122025",
+          "debit": 700,
+          "credit": "",
+          "status": "Success",
+          "balance": 2631178.09
+        },
+        {
+          "id": "4",
+          "date": "2025-12-14",
+          "narration": "House property tax",
+          "referenceCode": "TXN14122025",
+          "debit": 1500,
+          "credit": "",
+          "status": "Success",
+          "balance": 2629678.09
+        },
+        {
+          "id": "5",
+          "date": "2025-12-17",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN17122025",
+          "debit": "",
+          "credit": 20000,
+          "status": "Success",
+          "balance": 2649678.09
+        },
+        {
+          "id": "6",
+          "date": "2026-01-02",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN02012026",
+          "debit": "",
+          "credit": 50000,
+          "status": "Success",
+          "balance": 2699678.09
+        },
+        {
+          "id": "7",
+          "date": "2026-01-12",
+          "narration": "Wire Transfer",
+          "referenceCode": "TXN12012026",
+          "debit": "",
+          "credit": 4000,
+          "status": "Pending",
+          "balance": 2699678.09
+        }
+      ]
     }
-
-
 
 ]
 }
