@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light-mode {
+  --font-color: black;
+  --body-bg-color: white;
+  --bod-bg-color: #2F4F4F;
+  --place-holder: black;
+}
+.dark-mode {
+  --font-color: white;
+  --body-bg-color: black;
+  --bod-bg-color: #2F4F4F;
+  --place-holder: white;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+}
+
+.Mdropdown-options {
+  display: none;
+  height: 0px;
+  overflow: auto;
+}
+
+.Mdropdown:hover .Mdropdown-options {
+  display: block;
+  height: fit-content;
+  transition: ease-in;
+  transition-duration: 10000s;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  transition: ease-in;
+  transition-duration: 10000s;
+}

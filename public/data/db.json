@@ -1,0 +1,652 @@
+{
+  "accounts": [
+    {
+      "accountHolderName": "Jayden Davidson",
+      "accountNumber": "8020723256",
+      "accountStatus": "Active",
+      "accountType": "Current Account",
+      "profilePic": "Cote De Pablo.jpg",
+      "userID": "Dajdenson27683",
+      "passkey": "****** (Reset Passkey)",
+      "pinCode": "MCTBGB2L",
+      "email": "Jaydendavidson101@gmail.com",
+      "telephoneNo": "+15014486932",
+      "country": "United States",
+      "city": "Broad Street Aberdeen",
+      "address": "The Point St. Nicholas House Broad Street Aberdeen AB10 1AR",
+      "balance": 25000,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [{
+        "id": "1",
+        "date": "2024-08-20", 
+        "narration": "Salary Credit", 
+        "referenceCode": "TXN123456789", 
+        "debit": "", 
+        "credit": 10000,
+        "balance": 25000}]
+    },
+    {
+      "accountHolderName": "Sarah Johnson",
+      "accountNumber": "6543210870",
+      "accountStatus": "Active",
+      "accountType": "Savings Account",
+      "profilePic": "Cote De Pablo.jpg",
+      "userID": "SJohnson1234",
+      "passkey": "****** (Reset Passkey)",
+      "pinCode": "PKR9876X",
+      "email": "sarahjohnson@mail.com",
+      "telephoneNo": "+1234567890",
+      "country": "Canada",
+      "city": "Toronto",
+      "address": "123 Elm Street, Toronto, ON M5J 2S2",
+      "balance": 24000,
+      "currencySign": "$",
+      "currency": "CAD",
+      "transactions": [{
+        "id": "1",
+        "date": "2024-08-22", 
+        "narration": "Salary Credit", 
+        "referenceCode": "TXN1326547869", 
+        "debit": "", 
+        "credit": 15000,
+        "balance": 30000},
+        { "id": "2",
+          "date": "2024-08-22",
+          "narration": "Transfer to Robert Smith",
+          "referenceCode":"TXN123465879",
+          "debit": 6000,
+          "credit": "",
+          "balance": 24000}
+      ]
+    },
+    {
+      "accountHolderName": "Robert Smith",
+      "accountNumber": "9876543342",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "profilePic": "Cote De Pablo.jpg",
+      "userID": "RSmith5678",
+      "passkey": "****** (Reset Passkey)",
+      "pinCode": "WXY1234Z",
+      "email": "robert.smith@example.com",
+      "telephoneNo": "+9876543210",
+      "country": "United Kingdom",
+      "city": "London",
+      "address": "456 High Street, London, SW1A 1AA",
+      "balance": 8500,
+      "currencySign": "£",
+      "currency": "GBP",
+      "transactions": [{
+        "id": "1",
+        "date": "2024-08-22",
+        "narration": "Transfer from Sarah Johnson",
+        "referenceCode": "TXN124365879",
+        "debit": "",
+        "credit": 6000,
+        "balance": 8500
+      }]
+    },
+    {
+      "accountHolderName": "Cote De Pablo",
+      "accountNumber": "9876041567",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "profilePic": "Cote_De_Pablo.jpg",
+      "userID": "COTEDEPABLO1",
+      "passkey": "CD3PABL@",
+      "pinCode": "WKT0132Q",
+      "email": "c0t3d3pa6l0@gmail.com",
+      "telephoneNo": "+19294307806",
+      "country": "United States Of America",
+      "city": "California",
+      "address": "26030 Avenue Hall, Box 4, Valencia, California, USA.",
+      "balance": 2250000,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2023-08-22",
+          "narration": "Deposit",
+          "referenceCode": "TXN897685346",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1950000
+        },
+        {
+          "id": "2",
+          "date": "2023-09-02",
+          "narration": "Deposit",
+          "referenceCode": "TXN853184576",
+          "debit": "",
+          "credit": 100000,
+          "balance": 2050000
+        },
+        {
+          "id": "3",
+          "date": "2023-09-15",
+          "narration": "Withrawal",
+          "referenceCode": "TXN862908326",
+          "debit": 50000,
+          "credit": "",
+          "balance": 2000000
+        },
+        {
+          "id": "4",
+          "date": "2023-09-25",
+          "narration": "Deposit",
+          "referenceCode": "TXN765432109",
+          "debit": "",
+          "credit": 75000,
+          "balance": 2075000
+        },
+        {
+          "id": "5",
+          "date": "2023-09-28",
+          "narration": "Withrawal",
+          "referenceCode": "TXN564738291",
+          "debit": 25000,
+          "credit": "",
+          "balance": 2050000
+        },
+        {
+          "id": "6",
+          "date": "2023-10-05",
+          "narration": "Deposit",
+          "referenceCode": "TXN987654321",
+          "debit": "",
+          "credit": 50000,
+          "balance": 2100000
+        },
+        {
+          "id": "7",
+          "date": "2023-10-07",
+          "narration": "Withrawal",
+          "referenceCode": "TXN675849302",
+          "debit": 100000,
+          "credit": "",
+          "balance": 2000000
+        },
+        {
+          "id": "8",
+          "date": "2023-10-10",
+          "narration": "Deposit",
+          "referenceCode": "TXN453278909",
+          "debit": "",
+          "credit": 150000,
+          "balance": 2150000
+        },
+        {
+          "id": "9",
+          "date": "2023-10-13",
+          "narration": "Withrawal",
+          "referenceCode": "TXN284576903",
+          "debit": 100000,
+          "credit": "",
+          "balance": 2050000
+        },
+        {
+          "id": "10",
+          "date": "2023-10-20",
+          "narration": "Deposit",
+          "referenceCode": "TXN342678940",
+          "debit": "",
+          "credit": 263500,
+          "balance": 2313500
+        },
+        {
+          "id": "11",
+          "date": "2024-01-15",
+          "narration": "Withrawal",
+          "referenceCode": "TXN123456789",
+          "debit": 50000,
+          "credit": "",
+          "balance": 2263500
+        },
+        {
+          "id": "12",
+          "date": "2024-10-07",
+          "narration": "Withrawal",
+          "referenceCode": "TXN001122334",
+          "debit": 13500,
+          "credit": "",
+          "balance": 2250000
+        }
+      ]
+    },
+    {
+      "accountHolderName": "Joshua E Bryan",
+      "accountNumber": "9876041578",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "profilePic": "Joshua_E_Bryan.jpg",
+      "userID": "JOSHEBRYAN1",
+      "passkey": "J0SHBRY@N",
+      "pinCode": "WKT0247J",
+      "email": "joshua.bryan1987@gmail.com",
+      "telephoneNo": "+19294307807",
+      "country": "United States Of America",
+      "city": "New York",
+      "address": "125 Main Street, Box 12, Brooklyn, New York, USA.",
+      "balance": 1817390.88,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2023-08-15",
+          "narration": "Deposit",
+          "referenceCode": "TXN145236487",
+          "debit": "",
+          "credit": 25000,
+          "balance": 1250000
+        },
+        {
+          "id": "2",
+          "date": "2023-08-30",
+          "narration": "Deposit",
+          "referenceCode": "TXN756823489",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1300000
+        },
+        {
+          "id": "3",
+          "date": "2023-09-10",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN983745670",
+          "debit": 20000,
+          "credit": "",
+          "balance": 1280000
+        },
+        {
+          "id": "4",
+          "date": "2023-09-22",
+          "narration": "Deposit",
+          "referenceCode": "TXN348567290",
+          "debit": "",
+          "credit": 100000,
+          "balance": 1380000
+        },
+        {
+          "id": "5",
+          "date": "2023-10-01",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN678459321",
+          "debit": 50000,
+          "credit": "",
+          "balance": 1330000
+        },
+        {
+          "id": "6",
+          "date": "2023-10-15",
+          "narration": "Deposit",
+          "referenceCode": "TXN890123457",
+          "debit": "",
+          "credit": 75000,
+          "balance": 1405000
+        },
+        {
+          "id": "7",
+          "date": "2023-11-01",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN349876230",
+          "debit": 50000,
+          "credit": "",
+          "balance": 1355000
+        },
+        {
+          "id": "8",
+          "date": "2023-11-20",
+          "narration": "Deposit",
+          "referenceCode": "TXN123456788",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1405000
+        },
+        {
+          "id": "9",
+          "date": "2023-12-05",
+          "narration": "Deposit",
+          "referenceCode": "TXN234567891",
+          "debit": "",
+          "credit": 95000,
+          "balance": 1500000
+        },
+        {
+          "id": "10",
+          "date": "2024-08-07",
+          "narration": "Credit",
+          "referenceCode": "TXN238476891",
+          "debit": "",
+          "credit": 323590.88,
+          "balance": 1823590.88
+        },
+        {
+          "id": "10",
+          "date": "2024-08-07",
+          "narration": "Debit",
+          "referenceCode": "TXN238476891",
+          "debit": 6200,
+          "credit": "",
+          "balance": 1817390.88
+        }
+      ]
+    },
+    {
+      "accountHolderName": "Jason Harrington",
+      "accountNumber": "9276010478",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "profilePic": "Joshua_E_Bryan.jpg",
+      "userID": "JASON77",
+      "passkey": "JA50N",
+      "pinCode": "TKO2528J",
+      "email": "jasonharry007@gmail.com",
+      "telephoneNo": "+19294307807",
+      "country": "United States Of America",
+      "city": "New York",
+      "address": "125 Main Street, Box 12, Brooklyn, New York, USA.",
+      "balance": 2500000,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2023-08-15",
+          "narration": "Deposit",
+          "referenceCode": "TXN145290487",
+          "debit": "",
+          "credit": 1025000,
+          "balance": 2250000
+        },
+        {
+          "id": "2",
+          "date": "2023-08-30",
+          "narration": "Deposit",
+          "referenceCode": "TXN756823489",
+          "debit": "",
+          "credit": 50000,
+          "balance": 2300000
+        },
+        {
+          "id": "3",
+          "date": "2023-09-10",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN986645670",
+          "debit": 20000,
+          "credit": "",
+          "balance": 2280000
+        },
+        {
+          "id": "4",
+          "date": "2023-09-22",
+          "narration": "Deposit",
+          "referenceCode": "TXN349067290",
+          "debit": "",
+          "credit": 100000,
+          "balance": 2380000
+        },
+        {
+          "id": "5",
+          "date": "2023-10-01",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN678239321",
+          "debit": 50000,
+          "credit": "",
+          "balance": 2330000
+        },
+        {
+          "id": "6",
+          "date": "2023-10-15",
+          "narration": "Deposit",
+          "referenceCode": "TXN890134457",
+          "debit": "",
+          "credit": 75000,
+          "balance": 2405000
+        },
+        {
+          "id": "7",
+          "date": "2023-11-01",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN349856230",
+          "debit": 50000,
+          "credit": "",
+          "balance": 2355000
+        },
+        {
+          "id": "8",
+          "date": "2023-11-20",
+          "narration": "Deposit",
+          "referenceCode": "TXN123456878",
+          "debit": "",
+          "credit": 50000,
+          "balance": 2405000
+        },
+        {
+          "id": "9",
+          "date": "2023-12-05",
+          "narration": "Deposit",
+          "referenceCode": "TXN234567891",
+          "debit": "",
+          "credit": 95000,
+          "balance": 2500000
+        }
+      ]
+    },
+    {
+      "accountHolderName": "Amber Marshall",
+      "accountNumber": "9032178456",
+      "accountStatus": "Active",
+      "accountType": "Checking Account",
+      "profilePic": "Amber_Marshall.jpg",
+      "userID": "AMBERM1",
+      "passkey": "AMB3R!MARSH",
+      "pinCode": "AMR5274L",
+      "email": "ambermarshall@mail.com",
+      "telephoneNo": "+19294301234",
+      "country": "United States Of America",
+      "city": "Los Angeles",
+      "address": "456 Sunset Boulevard, Los Angeles, California, USA.",
+      "balance": 1900575.28,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2025-06-05",
+          "narration": "Deposit",
+          "referenceCode": "TXN761239847",
+          "debit": "",
+          "credit": 50000,
+          "balance": 1800900.00
+        },
+        {
+          "id": "2",
+          "date": "2025-06-12",
+          "narration": "Deposit",
+          "referenceCode": "TXN871234569",
+          "debit": "",
+          "credit": 30000,
+          "balance": 1830900.00
+        },
+        {
+          "id": "3",
+          "date": "2025-06-17",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN983472610",
+          "debit": 25000,
+          "credit": "",
+          "balance": 1805900.00
+        },
+        {
+          "id": "4",
+          "date": "2025-06-21",
+          "narration": "Deposit",
+          "referenceCode": "TXN562839104",
+          "debit": "",
+          "credit": 45000,
+          "balance": 1850880.85
+        },
+        {
+          "id": "5",
+          "date": "2025-06-28",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN648273910",
+          "debit": 30000,
+          "credit": "",
+          "balance": 1820880.85
+        },
+        {
+          "id": "6",
+          "date": "2025-07-04",
+          "narration": "Deposit",
+          "referenceCode": "TXN759283640",
+          "debit": "",
+          "credit": 40000,
+          "balance": 1860880.85
+        },
+        {
+          "id": "7",
+          "date": "2025-07-10",
+          "narration": "Deposit",
+          "referenceCode": "TXN852739104",
+          "debit": "",
+          "credit": 35000,
+          "balance": 1895875.96
+        },
+        {
+          "id": "8",
+          "date": "2025-07-16",
+          "narration": "Deposit",
+          "referenceCode": "TXN902834756",
+          "debit": "",
+          "credit": 60000,
+          "balance": 1955875.94
+        },
+        {
+          "id": "9",
+          "date": "2025-07-20",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN739201845",
+          "debit": 25000,
+          "credit": "",
+          "balance": 1930875.94
+        },
+        {
+          "id": "10",
+          "date": "2025-07-22",
+          "narration": "Withdrawal",
+          "referenceCode": "TXN628304975",
+          "debit": 30000,
+          "credit": "",
+          "balance": 1900575.28
+        }
+      ]
+    },
+    {
+      "accountHolderName": "KELVIN M. HUNT",
+      "accountNumber": "8020723256",
+      "accountStatus": "Active",
+      "accountType": "Current Account",
+      "profilePic": "Kevin M Hunt.jpeg",
+      "userID": "oluwabayo5",
+      "passkey": "Emmalyz55A",
+      "pinCode": "MCTBGB2L",
+      "email": "kevinhunt@mail.com",
+      "telephoneNo": "+15014486932",
+      "country": "United States",
+      "city": "Broad Street Aberdeen",
+      "address": "The Point St. Nicholas House Broad Street Aberdeen AB10 1AR",
+      "balance": 5699678.09,
+      "currencySign": "$",
+      "currency": "USD",
+      "transactions": [
+        {
+          "id": "1",
+          "date": "2026-01-01",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN01012026",
+          "debit": "",
+          "credit": 50000,
+          "status": "Success",
+          "balance": 5644678.09
+        },
+        {
+          "id": "2",
+          "date": "2026-01-03",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN03012026",
+          "debit": "",
+          "credit": 20000,
+          "status": "Success",
+          "balance": 5664678.09
+        },
+        {
+          "id": "3",
+          "date": "2026-01-04",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN04012026",
+          "debit": "",
+          "credit": 20000,
+          "status": "Success",
+          "balance": 5684678.09
+        },
+        {
+          "id": "4",
+          "date": "2026-01-06",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN06012026",
+          "debit": "",
+          "credit": 10000,
+          "status": "Success",
+          "balance": 5694678.09
+        },
+        {
+          "id": "5",
+          "date": "2026-01-07",
+          "narration": "Credit Transaction",
+          "referenceCode": "TXN07012026",
+          "debit": "",
+          "credit": 5000,
+          "status": "Success",
+          "balance": 5699678.09
+        },
+        {
+          "id": "6",
+          "date": "2026-01-11",
+          "narration": "Pending",
+          "referenceCode": "TXN11012026A",
+          "debit": "",
+          "credit": 3000,
+          "status": "Pending",
+          "balance": 5699678.09
+        },
+        {
+          "id": "7",
+          "date": "2026-01-11",
+          "narration": "Pending",
+          "referenceCode": "TXN11012026B",
+          "debit": "",
+          "credit": 2000,
+          "status": "Pending",
+          "balance": 5699678.09
+        },
+        {
+          "id": "8",
+          "date": "2026-01-11",
+          "narration": "Cancelled",
+          "referenceCode": "TXN11012026C",
+          "debit": "",
+          "credit": 1500,
+          "status": "Cancelled",
+          "balance": 5699678.09
+        }
+      ]
+    }
+
+
+
+]
+}
