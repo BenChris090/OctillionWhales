@@ -566,10 +566,10 @@
         {
           "id": "1",
           "date": "2026-01-01",
-          "narration": "Credit Transaction",
+          "narration": "Debit Transaction",
           "referenceCode": "TXN01012026",
-          "debit": "",
-          "credit": 50000,
+          "debit": 50000,
+          "credit": "",
           "status": "Success",
           "balance": 5644678.09
         },

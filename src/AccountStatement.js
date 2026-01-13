@@ -48,6 +48,7 @@ const AccountStatement = () => {
                             <tr className="divide-x-2 divide-cyan-900">
                                 <th className="py-2 px-8 w-1/4">Date</th>
                                 <th className="py-2 px-16 w-1/3">Narration</th>
+                                        <th className="py-2 px-4 w-1/6">Status</th>
                                 <th className="py-2 px-8 w-1/6">Reference Code</th>
                                 <th className="py-2 px-8 w-1/6">Debit (Dr)</th>
                                 <th className="py-2 px-8 w-1/6">Credit (Cr)</th>
@@ -64,6 +65,10 @@ const AccountStatement = () => {
                                     <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
                                         <td className="py-2 px-8">{transaction.date}</td>
                                         <td className="py-2 px-8">{transaction.narration}</td>
+                                        <td className={`py-2 px-4 font-medium ${transaction.status === "Pending" ? "text-yellow-700" 
+                                            : transaction.status === "Cancelled" ? "text-red-700" 
+                                            : transaction.status === "Success" ? "text-green-700" 
+                                            : "" }`}>{transaction.status}</td>
                                         <td className="py-2 px-8">{transaction.referenceCode}</td>
                                         <td className="py-2 px-8">{transaction.debit}</td>
                                         <td className="py-2 px-8">{transaction.credit}</td>
