@@ -70,9 +70,9 @@ const AccountStatement = () => {
                                             : transaction.status === "Success" ? "text-green-700" 
                                             : "" }`}>{transaction.status}</td>
                                         <td className="py-2 px-8">{transaction.referenceCode}</td>
-                                        <td className="py-2 px-8">{transaction.debit.toLocaleString()}</td>
-                                        <td className="py-2 px-8">{transaction.credit.toLocaleString()}</td>
-                                        <td className="py-2 px-[2.2rem]">{transaction.balance.toLocaleString()}</td>
+                                        <td className="py-2 px-8">{transaction.debit !== "" ? `-${user.currencySign}${transaction.debit.toLocaleString()}` : `${transaction.debit}`}</td>
+                                        <td className="py-2 px-8">{transaction.credit !== "" ? `+${user.currencySign}${transaction.credit.toLocaleString()}` : `${transaction.credit}`}</td>
+                                        <td className="py-2 px-[2.2rem]">{user.currencySign}{transaction.balance.toLocaleString()}</td>
                                     </tr>
                                 ))
                             )}
