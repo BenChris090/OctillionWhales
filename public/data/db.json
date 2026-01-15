@@ -566,9 +566,9 @@
         {
           "id": "1",
           "date": "2026-01-01",
-          "narration": "Debit Transaction",
+          "narration": "Cable and electric bills",
           "referenceCode": "TXN01012026",
-          "debit": 50000,
+          "debit": 800,
           "credit": "",
           "status": "Success",
           "balance": 5644678.09
@@ -576,72 +576,92 @@
         {
           "id": "2",
           "date": "2026-01-03",
-          "narration": "Credit Transaction",
+          "narration": "Water bill",
           "referenceCode": "TXN03012026",
-          "debit": "",
-          "credit": 20000,
+          "debit": 100,
+          "credit": "",
           "status": "Success",
-          "balance": 5664678.09
+          "balance": 5644578.09
         },
         {
           "id": "3",
-          "date": "2026-01-04",
-          "narration": "Credit Transaction",
-          "referenceCode": "TXN04012026",
+          "date": "2026-01-05",
+          "narration": "Wire credit",
+          "referenceCode": "TXN05012026",
           "debit": "",
-          "credit": 20000,
+          "credit": 30000,
           "status": "Success",
-          "balance": 5684678.09
+          "balance": 5674578.09
         },
         {
           "id": "4",
-          "date": "2026-01-06",
-          "narration": "Credit Transaction",
-          "referenceCode": "TXN06012026",
-          "debit": "",
-          "credit": 10000,
+          "date": "2026-01-09",
+          "narration": "The Home Depo",
+          "referenceCode": "TXN09012026",
+          "debit": 760.43,
+          "credit": "",
           "status": "Success",
-          "balance": 5694678.09
+          "balance": 5673817.66
         },
         {
           "id": "5",
-          "date": "2026-01-07",
-          "narration": "Credit Transaction",
-          "referenceCode": "TXN07012026",
-          "debit": "",
-          "credit": 5000,
+          "date": "2026-01-12",
+          "narration": "Debit Dallar Store",
+          "referenceCode": "TXN12012026",
+          "debit": 215.40,
+          "credit": "",
           "status": "Success",
-          "balance": 5699678.09
+          "balance": 5673602.26
         },
         {
           "id": "6",
-          "date": "2026-01-11",
-          "narration": "Credit Transaction",
-          "referenceCode": "TXN11012026A",
-          "debit": "",
-          "credit": 3000,
-          "status": "Pending",
-          "balance": 5699678.09
+          "date": "2026-01-12",
+          "narration": "Wire Transfer",
+          "referenceCode": "TXN12012026A",
+          "debit": 2000,
+          "credit": "",
+          "status": "Success",
+          "balance": 5671602.26
         },
         {
           "id": "7",
-          "date": "2026-01-11",
-          "narration": "Credit Transaction",
-          "referenceCode": "TXN11012026B",
+          "date": "2026-01-14",
+          "narration": "Mobile Deposit",
+          "referenceCode": "TXN11012026C",
           "debit": "",
-          "credit": 2000,
-          "status": "Pending",
-          "balance": 5699678.09
+          "credit": 20000,
+          "status": "Cancelled",
+          "balance": 5691602.26
         },
         {
           "id": "8",
+          "date": "2026-01-15",
+          "narration": "House property tax",
+          "referenceCode": "TXN15012026B",
+          "debit": 1200,
+          "credit": "",
+          "status": "Pending",
+          "balance": 5690402.26
+        },
+        {
+          "id": "9",
           "date": "2026-01-11",
-          "narration": "Credit Transaction",
+          "narration": "Mobile Deposit",
           "referenceCode": "TXN11012026C",
           "debit": "",
-          "credit": 1500,
+          "credit": 72000,
           "status": "Cancelled",
-          "balance": 5699678.09
+          "balance": 5762402.26
+        },
+        {
+          "id": "10",
+          "date": "2026-01-11",
+          "narration": "Wire Transfer",
+          "referenceCode": "TXN11012026C",
+          "debit": 1000,
+          "credit": "",
+          "status": "Pending",
+          "balance": 5761402.26
         }
       ]
     },
@@ -731,6 +751,16 @@
           "debit": "",
           "credit": 4000,
           "status": "Pending",
+          "balance": 2699678.09
+        },
+        {
+          "id": "8",
+          "date": "2026-01-15",
+          "narration": "Wire Transfer",
+          "referenceCode": "TXN11012026C",
+          "debit": 2000,
+          "credit": "",
+          "status": "Cancelled",
           "balance": 2699678.09
         }
       ]

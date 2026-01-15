@@ -48,7 +48,7 @@ const AccountStatement = () => {
                             <tr className="divide-x-2 divide-cyan-900">
                                 <th className="py-2 px-8 w-1/4">Date</th>
                                 <th className="py-2 px-16 w-1/3">Narration</th>
-                                        <th className="py-2 px-4 w-1/6">Status</th>
+                                <th className="py-2 px-4 w-1/6">Status</th>
                                 <th className="py-2 px-8 w-1/6">Reference Code</th>
                                 <th className="py-2 px-8 w-1/6">Debit (Dr)</th>
                                 <th className="py-2 px-8 w-1/6">Credit (Cr)</th>
@@ -70,9 +70,9 @@ const AccountStatement = () => {
                                             : transaction.status === "Success" ? "text-green-700" 
                                             : "" }`}>{transaction.status}</td>
                                         <td className="py-2 px-8">{transaction.referenceCode}</td>
-                                        <td className="py-2 px-8">{transaction.debit}</td>
-                                        <td className="py-2 px-8">{transaction.credit}</td>
-                                        <td className="py-2 px-[2.2rem]">{transaction.balance}</td>
+                                        <td className="py-2 px-8">{transaction.debit.toLocaleString()}</td>
+                                        <td className="py-2 px-8">{transaction.credit.toLocaleString()}</td>
+                                        <td className="py-2 px-[2.2rem]">{transaction.balance.toLocaleString()}</td>
                                     </tr>
                                 ))
                             )}

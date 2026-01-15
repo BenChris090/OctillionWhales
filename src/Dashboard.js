@@ -119,9 +119,9 @@ const Dashboard = () => {
                                             : transaction.status === "Success" ? "text-green-700" 
                                             : "" }`}>{transaction.status}</td>
                                         <td className="py-2 px-4">{transaction.referenceCode}</td>
-                                        <td className="py-2 px-4">{transaction.debit}</td>
-                                        <td className="py-2 px-4">{transaction.credit}</td>
-                                        <td className="py-2 px-4">{transaction.balance}</td>
+                                        <td className="py-2 px-4">{transaction.debit.toLocaleString()}</td>
+                                        <td className="py-2 px-4">{transaction.credit.toLocaleString()}</td>
+                                        <td className="py-2 px-4">{transaction.balance.toLocaleString()}</td>
                                     </tr>
                                 )))}
                                 </tbody>
