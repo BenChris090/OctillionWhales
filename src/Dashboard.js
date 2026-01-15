@@ -110,7 +110,7 @@ const Dashboard = () => {
                                         <td colSpan="6" className="py-2 px-8">No transactions available</td>
                                     </tr>
                                 ) : (
-                                    transactions.slice().reverse().map((transaction) => ( // Reverses the array by id without mutating the original array
+                                    transactions.slice(-7).reverse().map((transaction) => ( // Reverses the array by id without mutating the original array
                                     <tr key={transaction.id} className="divide-x-2 divide-y-2 divide-cyan-900">
                                         <td className="py-2 px-4">{transaction.date}</td>
                                         <td className="py-2 px-4 w-1/2">{transaction.narration}</td>
