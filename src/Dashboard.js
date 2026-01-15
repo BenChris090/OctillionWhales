@@ -42,7 +42,7 @@ const Dashboard = () => {
     const toggleNav = () => setmNav(!mNav);
 
     const lastWithdrawal = user.transactions
-        .filter((transaction) => transaction.debit !== "")
+        .filter((transaction) => transaction.debit !== "" && transaction.status === "Success")
         .slice(-1)[0];
 
     const handleLogout = () => {

@@ -38,8 +38,8 @@ const AccountStatement = () => {
         <Layout pageTitle="Account Statement" pageIcon={IoIosPaper}>
             <div className="flex flex-col px-4 lg:px-8 py-4 h-screen lg:h-full w-full">
                 <h2 className="text-2xl lg:text-3xl font-medium">Welcome: {user.accountHolderName}</h2>
-                <p className="text-lg lg:text-xl">Account Number: {user.accountNumber}</p>
-                <p className="text-lg lg:text-xl">Account Balance: {user.currencySign}{user.balance}</p>
+                <p className="font-medium text-lg lg:text-xl">Account Number: {user.accountNumber}</p>
+                <p className="font-medium text-lg lg:text-xl">Account Balance: {user.currencySign}{user.balance.toLocaleString()}</p>
                 <hr className="h-1 bg-black my-4" />
                 <h3 className="text-xl font-medium">Recent Transactions:</h3>
                 <div className="h-2/3 overflow-x-auto overflow-y-auto">
