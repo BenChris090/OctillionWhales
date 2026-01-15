@@ -630,7 +630,7 @@
           "referenceCode": "TXN11012026C",
           "debit": "",
           "credit": 20000,
-          "status": "Cancelled",
+          "status": "Success",
           "balance": 5691602.26
         },
         {
@@ -640,7 +640,7 @@
           "referenceCode": "TXN15012026B",
           "debit": 1200,
           "credit": "",
-          "status": "Pending",
+          "status": "Success",
           "balance": 5690402.26
         },
         {
@@ -650,7 +650,7 @@
           "referenceCode": "TXN11012026C",
           "debit": "",
           "credit": 72000,
-          "status": "Cancelled",
+          "status": "Success",
           "balance": 5762402.26
         },
         {
@@ -757,7 +757,7 @@
           "id": "8",
           "date": "2026-01-15",
           "narration": "Wire Transfer",
-          "referenceCode": "TXN11012026C",
+          "referenceCode": "TXN15012026C",
           "debit": 2000,
           "credit": "",
           "status": "Cancelled",
